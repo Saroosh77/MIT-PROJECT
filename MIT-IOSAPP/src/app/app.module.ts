@@ -23,7 +23,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { I18nModule } from './i18n/i18n.module';
 import { NominatimService } from './nominatim.service';
 // Material Components
-import { MatTableModule } from '@angular/material/table';
+// import { MatTableModule } from '@angular/material/table';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -87,7 +87,7 @@ import { ResultsListComponent } from './navigation/results-list/results-list.com
     MatSidenavModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatTableModule,
+    // MatTableModule,
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,

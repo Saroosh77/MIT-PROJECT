@@ -1,7 +1,8 @@
 .grid {
     width: 80%;
     color: white;
-margin-left: 10%;
+    margin-left: 10%;
+    font-size: x-large;
 }
 
 .m3 {
@@ -14,4 +15,8 @@ margin-left: 10%;
 
 .m2 {
     background: #434343;
+}
+
+a {
+    all: unset;
 }

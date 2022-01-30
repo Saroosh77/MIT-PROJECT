@@ -1,1 +1,47 @@
-<p>appointments works!</p>
+<h1>{{'cAppointments'|translate}}</h1>
+
+<br>
+
+<div>
+  <div class="border">
+    <mat-grid-list cols="5" rowHeight="50" role="list" gutterSize="1px">
+      <mat-grid-tile role="listitem">
+        <strong>{{'cAppointments'|translate}}</strong>
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        <strong>E-Mail</strong>
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        <strong>{{'cDesc'|translate}}</strong>
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        <strong>{{'cFrom'|translate}}</strong>
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        <strong>{{'cTo'|translate}}</strong>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+<br>
+
+  <div *ngFor="let app of appointments">
+    <mat-grid-list cols="5" rowHeight="50" role="list" gutterSize="1px">
+      <mat-grid-tile role="listitem">
+        {{ app.name }}
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        {{ app.email }}
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        {{ app.description }}
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        {{ app.booked_from | date }}
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        {{ app.booked_to | date }}
+      </mat-grid-tile>
+    </mat-grid-list>
+    <!-- <br> -->
+  </div>
+</div>

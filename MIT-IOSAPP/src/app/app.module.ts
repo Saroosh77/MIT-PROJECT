@@ -1,14 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-/**
- * Project was created without Routing option
- * so Routing will be setup here (otherwise in app-routing.module.ts)
- * followed https://angular.io/start/start-routing
- * used structure from mit-ws-20-21-requests.pdf
- * so components needed are: Start, Navigation, Room Info, Int. Office, Login
- * difference to structure image: gave navigation higher prio than room info
- * 
- */
 
 // Components
 import { AppComponent } from './app.component';
@@ -23,12 +14,14 @@ import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 import { InternalinfoComponent } from './internalinfo/internalinfo.component';
+import { AppointmentsComponent } from './appointments/appointments.component';
 import { JwtGuard } from './jwt.guard';
 
 // Modules
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { I18nModule } from './i18n/i18n.module';
+import { NominatimService } from './nominatim.service';
 // Material Components
 import { MatTableModule } from '@angular/material/table';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -46,7 +39,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import  {MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import { AppointmentsComponent } from './appointments/appointments.component';
+import {LeafletModule} from '@asymmetrik/ngx-leaflet';
+import "leaflet/dist/leaflet.css";
+import { GeocodingComponent } from './navigation/geocoding/geocoding.component';
+import { ResultsListComponent } from './navigation/results-list/results-list.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +58,8 @@ import { AppointmentsComponent } from './appointments/appointments.component';
     InternalinfoComponent,
     InternationalComponent,
     AppointmentsComponent,
+    GeocodingComponent,
+    ResultsListComponent,
     
   ],
   imports: [
@@ -72,11 +70,12 @@ import { AppointmentsComponent } from './appointments/appointments.component';
       { path: 'events', component: EventsComponent },
       { path: 'rooms', component: RoomsComponent },
       { path: 'international', component: InternationalComponent },
-      // { path: 'international', loadChildren: './international/international.module#InternationalModule' },
       { path: 'admin', component: AdminComponent, canActivate: [JwtGuard] },
       { path: 'user', component: UserComponent, canActivate: [JwtGuard] },
       { path: 'login', component: LoginComponent },
-      { path: 'internalinfo', component: InternalinfoComponent }
+      { path: 'internalinfo', component: InternalinfoComponent },
+      { path: 'appointments', component: AppointmentsComponent },
+      { path: 'register', component: RegisterComponent },
     ]),
     FlexLayoutModule,
     MatButtonModule,
@@ -96,14 +95,14 @@ import { AppointmentsComponent } from './appointments/appointments.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatGridListModule,
-    // MatGridTile,
+    LeafletModule,
     BrowserAnimationsModule,
     I18nModule],
   exports: [
     RouterModule,
   ],
   entryComponents: [LoginComponent],
-  providers: [MatDatepickerModule, MatNativeDateModule ], // SocketioService
+  providers: [MatDatepickerModule, MatNativeDateModule, NominatimService ], // SocketioService
   bootstrap: [AppComponent]
 })
 export class AppModule { }

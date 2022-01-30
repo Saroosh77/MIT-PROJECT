@@ -1,0 +1,25 @@
+#map {
+    margin-top:10%;
+    padding: 5%;
+    width: fit-content;
+    /* height: 500px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #details-panel {
+    text-align: left;
+    top:auto;
+  }
+  
+  .leaflet-bottom, .leaflet-left {
+    pointer-events: auto;
+  }
+  
+  #map-point-form {
+    padding-bottom: 5px;
+      margin-top:20px;
+      float: right;
+      width: 50%;
+    }
+    

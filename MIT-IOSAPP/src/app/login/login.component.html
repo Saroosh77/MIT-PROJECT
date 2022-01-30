@@ -1,4 +1,5 @@
 <h1>{{'cLogin'|translate}}</h1>
+
 <br>
 
 <div>
@@ -6,7 +7,7 @@
         <mat-error>{{successMsg}}</mat-error>
         <form [formGroup]="loginForm" (ngSubmit)="login()">
             <div>
-                <mat-label>Email</mat-label><br>
+                <mat-label>E-Mail</mat-label><br>
                 <input type="email" id="email" name="email" placeholder="Email" required formControlName="email" [ngClass]="{ 'has-error': formControls.email.errors }" />
                 <div *ngIf="formControls.email.errors">
                     <mat-error *ngIf="formControls.email.errors?.required">{{'cEmailInput' | translate }}</mat-error>
@@ -15,7 +16,7 @@
             </div>
             <br>
             <div>
-                <mat-label>Password</mat-label><br>
+                <mat-label>{{'cPassword'|translate}}</mat-label><br>
                 <input type="password" id="password" name="password" placeholder="Password" required formControlName="password" [ngClass]="{ 'has-error': formControls.password.errors }">
                 <div *ngIf="formControls.password.errors">
                     <mat-error *ngIf="formControls.password.errors?.required">{{'cPasswordInput' | translate }}</mat-error>

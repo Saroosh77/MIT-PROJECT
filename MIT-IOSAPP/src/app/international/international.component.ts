@@ -9,6 +9,10 @@ export class InternationalComponent implements OnInit {
 
   constructor() { }
 
+  externalLink1: string = "https://www.th-deg.de/en/students/going-abroad";
+  externalLink2: string = "https://www.th-deg.de/exchange-students";
+  externalLink3: string = "https://www.th-deg.de/int-students";
+
   ngOnInit(): void {
   }
 

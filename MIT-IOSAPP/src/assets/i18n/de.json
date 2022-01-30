@@ -25,5 +25,13 @@
     "cNews": "Nachrichten",
     "cEvents": "Veranstaltungen",
     "chomeheading1": "studieren & forschen an der thd.",
-    "chomeheading2": "innovativ und lebendig. entdecke deine hochschule"
+    "chomeheading2": "innovativ und lebendig. entdecke deine hochschule",
+    "cDate": "Datum",
+    "cDesc": "Beschreibung",
+    "cBooked": "Gebucht",
+    "cFrom": "Von",
+    "cTo": "Nach",
+    "cPassword": "Kennwort",
+    "cOrg": "Veranstalter",
+    "cPart": "Teilnehmer"
 }

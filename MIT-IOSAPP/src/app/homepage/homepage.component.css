@@ -14,3 +14,15 @@
     margin-left: 12%;
     margin-right: 12%;
 }
+
+.pics {
+    text-align: center;
+}
+
+.pic {
+    padding: 1%;
+}
+
+hr {
+    margin: 5%;
+}

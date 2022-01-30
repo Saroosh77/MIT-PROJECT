@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppointmentsService } from './appointments.service';
 
 @Component({
   selector: 'app-appointments',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppointmentsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: AppointmentsService) { }
+
+  appointments = [];
 
   ngOnInit(): void {
+    this.getAll()
   }
 
+  getAll(): void {
+    this.service.getAppointment().subscribe({
+      next: data => {
+        this.appointments = data['result'];
+      },
+    });
+  }
 }

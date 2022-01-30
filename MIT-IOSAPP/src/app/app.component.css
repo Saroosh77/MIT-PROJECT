@@ -2,6 +2,15 @@
     margin-bottom: 10%;
 }
 
+.footer {
+    background-color: #ecedee !important;
+}
+
+.fp {
+    color: black;
+    margin: auto;
+    }
+
 .firstnav {
     background-color: #f8f9fa !important;
     z-index: 1 !important;
@@ -45,7 +54,10 @@
     color: #000;
 }
 
+.headpic {
+    width: -webkit-fill-available;
+}
+
 .pad {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 5%;
 }

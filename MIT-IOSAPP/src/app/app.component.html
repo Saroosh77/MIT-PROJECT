@@ -27,14 +27,16 @@
     <!-- 2nd header -->
 
     <mat-toolbar class="secondnav">
+       <div>
         <!-- DIT-Logo -->
-        <div *ngIf="translate.currentLang === 'en'">
+        <div routerLink="/" *ngIf="translate.currentLang === 'en'">
             <img src="assets/DIT-Logo.png" alt="DIT logo" height="50">
         </div>
         <!-- THD-Logo -->
-        <div *ngIf="translate.currentLang === 'de'">
+        <div routerLink="/" *ngIf="translate.currentLang === 'de'">
             <img src="assets/THD-Logo.png" alt="THD logo" height="50">
         </div>
+    </div>
         <!-- spacer  -->
         <span class="spacer"></span>
         <!-- pages -->
@@ -51,11 +53,28 @@
             <button mat-icon-button routerLink="/international">
                 {{'cInternational'|translate}}
             </button>
+            <button mat-icon-button routerLink="/navigation">
+                {{'cNavigation'|translate}}
+            </button>
       
         </div>
     </mat-toolbar>
+    <div >
+        <!-- DIT-Logo -->
+        <div *ngIf="translate.currentLang === 'en'">
+            <img class="headpic" src="assets/home-DIT.jpg" alt="DIT Home" >
+        </div>
+        <!-- THD-Logo -->
+        <div *ngIf="translate.currentLang === 'de'">
+            <img class="headpic" src="assets/home-THD.jpg" alt="THD Home" >
+        </div>
+    
 </div>
 
 <div class="pad">
-    <router-outlet></router-outlet>
+    <router-outlet ></router-outlet>
 </div>
+
+<mat-toolbar class="footer">
+    <p class="fp">Modern Internet Technologies - International Student App - 2021 - 2022</p>
+</mat-toolbar>

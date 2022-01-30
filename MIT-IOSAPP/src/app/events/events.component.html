@@ -1,9 +1,9 @@
 <div>
     <h1>{{'cEvents'|translate}}</h1>
 
-    <hr>
+    <br>
 
-    <div class="text">
+    <!-- <div class="text">
     <mat-expansion-panel>
         <mat-expansion-panel-header>
             <mat-panel-title>
@@ -88,29 +88,46 @@
           </form>
 
     </mat-expansion-panel>
-</div>
+</div> -->
 
-    <br>
-    <br>
+  
 
-    <div>
-        <mat-grid-list cols="2" rowHeight="50" role="list" gutterSize="1px">
+    <div class="border">
+        <mat-grid-list cols="5" rowHeight="50" role="list" gutterSize="1px">
             <mat-grid-tile role="listitem">
-                <strong>Date</strong>
+                <strong>{{'cDate'|translate}}</strong>
             </mat-grid-tile>
             <mat-grid-tile role="listitem">
-                <strong>Description</strong>
+                <strong>{{'cDesc'|translate}}</strong>
+            </mat-grid-tile>
+            <mat-grid-tile role="listitem">
+                <strong>{{'cOrg'|translate}}</strong>
+            </mat-grid-tile>
+            <mat-grid-tile role="listitem">
+                <strong>{{'cPart'|translate}}</strong>
+            </mat-grid-tile>
+            <mat-grid-tile role="listitem">
+                <strong>{{'cRooms'|translate}}</strong>
             </mat-grid-tile>
         </mat-grid-list>
     </div>
-
+<br>
     <div *ngFor="let event of events">
-        <mat-grid-list cols="2" rowHeight="50" role="list" gutterSize="1px">
+        <mat-grid-list cols="5" rowHeight="50" role="list" gutterSize="1px">
             <mat-grid-tile role="listitem">
                 {{ event.created_at | date }}
             </mat-grid-tile>
             <mat-grid-tile class="tile" role="listitem">
                 {{ event.title }} <br> {{ event.description}}
+            </mat-grid-tile>
+            <mat-grid-tile class="tile" role="listitem">
+                {{ event.organiser}}
+            </mat-grid-tile>
+            <mat-grid-tile class="tile" role="listitem">
+                {{ event.participants}}
+            </mat-grid-tile>
+            <mat-grid-tile class="tile" role="listitem">
+                {{ event.room.name}}
             </mat-grid-tile>
         </mat-grid-list>
         <br>

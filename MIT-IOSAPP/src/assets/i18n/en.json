@@ -25,5 +25,13 @@
     "cNews": "News",
     "cEvents": "Events",
     "chomeheading1": "Study & Research at DIT.",
-    "chomeheading2": "Discover our Pioneering and Vibrant University"
+    "chomeheading2": "Discover our Pioneering and Vibrant University",
+    "cDate": "Date",
+    "cDesc": "Description",
+    "cBooked": "Booked",
+    "cFrom": "From",
+    "cTo": "To",
+    "cPassword": "Password",
+    "cOrg": "Organizer",
+    "cPart": "Participants"
 }

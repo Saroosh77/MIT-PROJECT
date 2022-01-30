@@ -1,0 +1,47 @@
+<h1>{{'cRooms'|translate}}</h1>
+
+<hr>
+
+<div>
+  <div>
+    <mat-grid-list cols="5" rowHeight="50" role="list" gutterSize="1px">
+      <mat-grid-tile role="listitem">
+        <strong>Room</strong>
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        <strong>Description</strong>
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        <strong>Booked</strong>
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        <strong>From</strong>
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        <strong>To</strong>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+<br>
+
+  <div *ngFor="let rm of rooms">
+    <mat-grid-list cols="5" rowHeight="50" role="list" gutterSize="1px">
+      <mat-grid-tile role="listitem">
+        {{ rm.name }}
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        {{ rm.description }}
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        {{ rm.isBooked }}
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        {{ rm.booked_from | date }}
+      </mat-grid-tile>
+      <mat-grid-tile role="listitem">
+        {{ rm.booked_to | date }}
+      </mat-grid-tile>
+    </mat-grid-list>
+    <!-- <br> -->
+  </div>
+</div>

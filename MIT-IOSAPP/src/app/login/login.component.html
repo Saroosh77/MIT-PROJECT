@@ -1,0 +1,30 @@
+<h1>{{'cLogin'|translate}}</h1>
+<br>
+
+<div>
+    <mat-card class="logincard">
+        <mat-error>{{successMsg}}</mat-error>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div>
+                <mat-label>Email</mat-label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required formControlName="email" [ngClass]="{ 'has-error': formControls.email.errors }" />
+                <div *ngIf="formControls.email.errors">
+                    <mat-error *ngIf="formControls.email.errors?.required">{{'cEmailInput' | translate }}</mat-error>
+                    <mat-error *ngIf="formControls.email.errors?.email">{{'cEmailValid' | translate }}</mat-error>
+                </div>
+            </div>
+            <br>
+            <div>
+                <mat-label>Password</mat-label><br>
+                <input type="password" id="password" name="password" placeholder="Password" required formControlName="password" [ngClass]="{ 'has-error': formControls.password.errors }">
+                <div *ngIf="formControls.password.errors">
+                    <mat-error *ngIf="formControls.password.errors?.required">{{'cPasswordInput' | translate }}</mat-error>
+                    <mat-error *ngIf="formControls.password.errors?.password">{{'cPasswordValid' | translate }}</mat-error>
+                </div>
+            </div>
+            <br>
+            <p><button mat-raised-button class="button">{{'cLogin' | translate }}</button></p>
+        </form>
+        <p>{{'cRegisterText' | translate }} <button mat-raised-button (click)="register()">{{'cRegister' | translate }}</button></p>
+    </mat-card>
+</div>

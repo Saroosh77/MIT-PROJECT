@@ -1,0 +1,119 @@
+<div>
+    <h1>{{'cEvents'|translate}}</h1>
+
+    <hr>
+
+    <div class="text">
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+               <b> Add Event</b>
+            </mat-panel-title>
+            <mat-icon>arrow</mat-icon>
+        </mat-expansion-panel-header>
+
+        <form [formGroup]="createForm" (ngSubmit)="createEvent()">
+            <div>
+              <mat-label>Title</mat-label><br>
+              <input type="text" id="title" name="title" placeholder="Title" required formControlName="title" [ngClass]="{ 'has-error': formControls.title.errors }" />
+              <div *ngIf="formControls.title.errors">
+                <mat-error *ngIf="formControls.title.errors?.required">Title is required</mat-error>
+                <mat-error *ngIf="formControls.title.errors?.title">Title must be valid</mat-error>
+              </div>
+            </div>
+            <br>
+            <div>
+              <mat-label>Description</mat-label><br>
+              <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ 'has-error': formControls.description.errors }" />
+              <div *ngIf="formControls.description.errors">
+                <mat-error *ngIf="formControls.description.errors?.required">Description is required</mat-error>
+                <mat-error *ngIf="formControls.description.errors?.description">Description must be valid</mat-error>
+              </div>
+            </div>
+            <br>
+            <div>
+              <mat-label>Organiser</mat-label><br>
+              <input type="text" id="organiser" name="organiser" placeholder="Organiser" required formControlName="organiser" [ngClass]="{ 'has-error': formControls.organiser.errors }">
+              <div *ngIf="formControls.organiser.errors">
+                <mat-error *ngIf="formControls.organiser.errors?.required">Organiser is required</mat-error>
+                <mat-error *ngIf="formControls.organiser.errors?.organiser">Organiser must be valid</mat-error>
+              </div>
+            </div>
+            <br>
+            <div>
+              <mat-label>Participants</mat-label><br>
+              <input type="text" id="participants" name="participants" placeholder="Participants" required formControlName="participants" [ngClass]="{ 'has-error': formControls.participants.errors }">
+              <div *ngIf="formControls.participants.errors">
+                <mat-error *ngIf="formControls.participants.errors?.required">Participants is required</mat-error>
+                <mat-error *ngIf="formControls.participants.errors?.participants">Participants must be valid</mat-error>
+              </div>
+            </div>
+            <br>
+            <div>
+              <div>
+                <mat-label>Room</mat-label>
+                <mat-select formControlName="room" [ngClass]="{ 'has-error': formControls.room.errors }">
+                  <mat-option *ngFor="let eventRoom of rooms" [value]="eventRoom._id">
+                    {{eventRoom.name}}&#8212;{{eventRoom.roomId}}
+                  </mat-option>
+                </mat-select>
+                <div *ngIf="formControls.room.errors">
+                  <mat-error *ngIf="formControls.room.errors?.required">Room is required</mat-error>
+                  <mat-error *ngIf="formControls.room.errors?.room">Room must be valid</mat-error>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div>
+              <mat-label>Date</mat-label><br>
+              <mat-date-range-input [rangePicker]="picker">
+                <input matStartDate placeholder="Start date" required formControlName="fromDate" [ngClass]="{ 'has-error': formControls.fromDate.errors }">
+                <input matEndDate placeholder="End date" required formControlName="toDate" [ngClass]="{ 'has-error': formControls.toDate.errors }">
+              </mat-date-range-input>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-date-range-picker #picker></mat-date-range-picker>
+              <div *ngIf="formControls.fromDate.errors">
+                <mat-error *ngIf="formControls.fromDate.errors?.required">Start Date is required</mat-error>
+                <mat-error *ngIf="formControls.fromDate.hasError('matStartDateInvalid')">Start Date must be valid</mat-error>
+              </div>
+              <div *ngIf="formControls.toDate.errors">
+                <mat-error *ngIf="formControls.toDate.errors?.required">End Date is required</mat-error>
+                <mat-error *ngIf="formControls.toDate.hasError('matEndDateInvalid')">End Date must be valid</mat-error>
+              </div>
+            </div>
+            <mat-action-row>
+                <button mat-raised-button class="button"><b>Create</b></button>
+            </mat-action-row>
+
+          </form>
+
+    </mat-expansion-panel>
+</div>
+
+    <br>
+    <br>
+
+    <div>
+        <mat-grid-list cols="2" rowHeight="50" role="list" gutterSize="1px">
+            <mat-grid-tile role="listitem">
+                <strong>Date</strong>
+            </mat-grid-tile>
+            <mat-grid-tile role="listitem">
+                <strong>Description</strong>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+
+    <div *ngFor="let event of events">
+        <mat-grid-list cols="2" rowHeight="50" role="list" gutterSize="1px">
+            <mat-grid-tile role="listitem">
+                {{ event.created_at | date }}
+            </mat-grid-tile>
+            <mat-grid-tile class="tile" role="listitem">
+                {{ event.title }} <br> {{ event.description}}
+            </mat-grid-tile>
+        </mat-grid-list>
+        <br>
+    </div>
+
+</div>

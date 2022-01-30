@@ -1,0 +1,61 @@
+<!-- first header -->
+<div class="mainheader">
+    <mat-toolbar class="firstnav">
+        <!-- search bar -->
+        <form [style.fontSize.px]="15">
+            <mat-form-field class="search" appearance="outline">
+                <input matInput placeholder="Search">
+            </mat-form-field>
+        </form>
+        <mat-icon>search</mat-icon>
+        <!-- spacer -->
+        <span class="spacer"></span>
+        <!-- select language  -->
+        <mat-form-field class="langbar">
+            <mat-select [(value)]="selectedlang" (selectionChange)="translate.use($event.value)">
+                <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang"> {{ lang }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <!-- login button  -->
+        <button mat-icon-button routerLink="/login">
+            <mat-icon routerLink="/login">person_outline</mat-icon>
+        </button>
+    </mat-toolbar>
+
+    <br>
+    <br>
+    <!-- 2nd header -->
+
+    <mat-toolbar class="secondnav">
+        <!-- DIT-Logo -->
+        <div *ngIf="translate.currentLang === 'en'">
+            <img src="assets/DIT-Logo.png" alt="DIT logo" height="50">
+        </div>
+        <!-- THD-Logo -->
+        <div *ngIf="translate.currentLang === 'de'">
+            <img src="assets/THD-Logo.png" alt="THD logo" height="50">
+        </div>
+        <!-- spacer  -->
+        <span class="spacer"></span>
+        <!-- pages -->
+        <div class="btndiv">
+            <button mat-icon-button routerLink="/">
+                {{'cHomepage'|translate}}
+            </button>
+            <button mat-icon-button routerLink="/events">
+                {{'cEvents'|translate}}
+            </button>
+            <button mat-icon-button routerLink="/internalinfo">
+                {{'cInfo'|translate}}
+            </button>
+            <button mat-icon-button routerLink="/international">
+                {{'cInternational'|translate}}
+            </button>
+      
+        </div>
+    </mat-toolbar>
+</div>
+
+<div class="pad">
+    <router-outlet></router-outlet>
+</div>

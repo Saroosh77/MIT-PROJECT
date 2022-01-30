@@ -1,0 +1,51 @@
+.mainheader {
+    margin-bottom: 10%;
+}
+
+.firstnav {
+    background-color: #f8f9fa !important;
+    z-index: 1 !important;
+    position: fixed;
+}
+
+.secondnav {
+    background-color: #333333c7 !important;
+    height: 95px !important;
+    margin-top: 1%;
+    z-index: 1 !important;
+    position: fixed;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.search,
+.langbar {
+    height: 60px;
+    color: #000;
+}
+
+.langbar {
+    width: 50px;
+    margin-right: 1%;
+}
+
+.btndiv {
+    margin-top: 2em !important;
+}
+
+.mat-icon-button {
+    width: auto;
+    padding: 10px;
+}
+
+.mat-icon {
+    font-size: 2em !important;
+    color: #000;
+}
+
+.pad {
+    padding-left: 10%;
+    padding-right: 10%;
+}

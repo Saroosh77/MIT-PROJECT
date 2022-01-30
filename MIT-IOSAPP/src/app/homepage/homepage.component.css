@@ -1,0 +1,16 @@
+.text {
+    margin-left: 10%;
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+
+.link {
+    color: #428bca;
+}
+
+.desc {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 12%;
+    margin-right: 12%;
+}

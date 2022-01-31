@@ -57,3 +57,9 @@ Database Administrator
 Students
 Outgoing and exchange students
 Guest User
+
+# Future Prospects
+
+- Chat Function
+- Better UI of Navigation Panel
+- List of Professors, Mensa, Courses

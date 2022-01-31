@@ -1,6 +1,3 @@
-# Note
- Previous project was https://mygit.th-deg.de/mr13765/mit-project.git. But the member mr13765 degistered from the course. Therefore, I have created a new repository.
-
 # MIT-PROJECT
 
 Project_name = International Office/Student App

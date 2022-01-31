@@ -36,6 +36,7 @@ repository link :  https://mygit.th-deg.de/ma16266/mit-project.git
 - Package Manager: npm 6.14.1
 - Express
 - Mongoose
+- MongoDB
 
 # Running The Project
 

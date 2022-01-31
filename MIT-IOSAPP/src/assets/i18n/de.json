@@ -24,6 +24,7 @@
     "cInfo": "Interne Informationen",
     "cNews": "Nachrichten",
     "cEvents": "Veranstaltungen",
+    "cUser": "Benutzer",
     "chomeheading1": "studieren & forschen an der thd.",
     "chomeheading2": "innovativ und lebendig. entdecke deine hochschule",
     "cDate": "Datum",
@@ -32,6 +33,12 @@
     "cFrom": "Von",
     "cTo": "Nach",
     "cPassword": "Kennwort",
+    "cConfirm": "Bestätigen",
     "cOrg": "Veranstalter",
-    "cPart": "Teilnehmer"
+    "cPart": "Teilnehmer",
+    "cCreate": "Erstellen",
+    "cTitle": "Title",
+    "cRequired": "ist erforderlich",
+    "cInvalid": "ist ungültig",
+    "cLogout": "Ausloggen"
 }

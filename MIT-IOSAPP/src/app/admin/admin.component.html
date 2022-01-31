@@ -4,24 +4,24 @@
     <!-- Create News  -->
     <mat-tab label="News">
         <!-- <ng-template matTabContent> -->
-            <mat-label>Create News</mat-label>
-
+            <mat-label class="title">{{'cCreate'|translate}} {{'cNews'|translate}}</mat-label>
+<br>
                 <form [formGroup]="NewsForm" (ngSubmit)="createNews()">
                     <div>
-                      <mat-label>Title</mat-label><br>
+                      <mat-label>{{'cTitle'|translate}}</mat-label><br>
                       <input type="text" id="title" name="title" placeholder="Title" required formControlName="title" [ngClass]="{ 'has-error': formControls1.title.errors }" />
                       <div *ngIf="formControls1.title.errors">
-                        <mat-error *ngIf="formControls1.title.errors?.required">Title is required</mat-error>
-                        <mat-error *ngIf="formControls1.title.errors?.title">Title must be valid</mat-error>
+                        <mat-error *ngIf="formControls1.title.errors?.required">{{'cTitle'|translate}} {{'cRequired'|translate}}</mat-error>
+                        <mat-error *ngIf="formControls1.title.errors?.title">{{'cTitle'|translate}} {{'cInvalid'|translate}}</mat-error>
                       </div>
                     </div>
                     <br>
                     <div>
-                      <mat-label>Description</mat-label><br>
+                      <mat-label>{{'cDesc'|translate}}</mat-label><br>
                       <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ 'has-error': formControls1.description.errors }" />
                       <div *ngIf="formControls1.description.errors">
-                        <mat-error *ngIf="formControls1.description.errors?.required">Description is required</mat-error>
-                        <mat-error *ngIf="formControls1.description.errors?.description">Description must be valid</mat-error>
+                        <mat-error *ngIf="formControls1.description.errors?.required">{{'cDesc'|translate}} {{'cRequired'|translate}}</mat-error>
+                        <mat-error *ngIf="formControls1.description.errors?.description">{{'cDesc'|translate}} {{'cInvalid'|translate}}</mat-error>
                       </div>
                     </div>
                     <br>
@@ -29,12 +29,12 @@
                         <mat-label>Link</mat-label><br>
                         <input type="text" id="link" name="link" placeholder="Link" required formControlName="link" [ngClass]="{ 'has-error': formControls1.title.errors }" />
                         <div *ngIf="formControls1.link.errors">
-                          <mat-error *ngIf="formControls1.link.errors?.required">Link is required</mat-error>
-                          <mat-error *ngIf="formControls1.link.errors?.link">Link must be valid</mat-error>
+                          <mat-error *ngIf="formControls1.link.errors?.required">Link {{'cRequired'|translate}}</mat-error>
+                          <mat-error *ngIf="formControls1.link.errors?.link">Link {{'cRequired'|translate}}</mat-error>
                         </div>
                       </div>
                       <mat-action-row>
-                        <button mat-raised-button class="button"><b>Create</b></button>
+                        <button mat-raised-button class="button"><b>{{'cCreate'|translate}}</b></button>
                     </mat-action-row>
         
                   </form>
@@ -44,60 +44,61 @@
         <!-- Create Event  -->
     <mat-tab label="Events">
         <!-- <ng-template matTabContent> -->
+          <mat-label class="title">{{'cCreate'|translate}} {{'cEvents'|translate}}</mat-label>
         <form [formGroup]="EventForm" (ngSubmit)="createEvent()">
             <div>
-              <mat-label>Title</mat-label><br>
+              <mat-label>{{'cTitle'|translate}}</mat-label><br>
               <input type="text" id="title" name="title" placeholder="Title" required formControlName="title" [ngClass]="{ 'has-error': formControls2.title.errors }" />
               <div *ngIf="formControls2.title.errors">
-                <mat-error *ngIf="formControls2.title.errors?.required">Title is required</mat-error>
-                <mat-error *ngIf="formControls2.title.errors?.title">Title must be valid</mat-error>
+                <mat-error *ngIf="formControls2.title.errors?.required">{{'cTitle'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls2.title.errors?.title">{{'cTitle'|translate}} {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
             <div>
-              <mat-label>Description</mat-label><br>
+              <mat-label>{{'cDesc'|translate}}</mat-label><br>
               <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ 'has-error': formControls2.description.errors }" />
               <div *ngIf="formControls2.description.errors">
-                <mat-error *ngIf="formControls2.description.errors?.required">Description is required</mat-error>
-                <mat-error *ngIf="formControls2.description.errors?.description">Description must be valid</mat-error>
+                <mat-error *ngIf="formControls2.description.errors?.required">{{'cDesc'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls2.description.errors?.description">{{'cTitle'|translate}} {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
             <div>
-              <mat-label>Organiser</mat-label><br>
+              <mat-label>{{'cOrg'|translate}}</mat-label><br>
               <input type="text" id="organiser" name="organiser" placeholder="Organiser" required formControlName="organiser" [ngClass]="{ 'has-error': formControls2.organiser.errors }">
               <div *ngIf="formControls2.organiser.errors">
-                <mat-error *ngIf="formControls2.organiser.errors?.required">Organiser is required</mat-error>
-                <mat-error *ngIf="formControls2.organiser.errors?.organiser">Organiser must be valid</mat-error>
+                <mat-error *ngIf="formControls2.organiser.errors?.required">{{'cOrg'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls2.organiser.errors?.organiser">{{'cOrg'|translate}} {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
             <div>
-              <mat-label>Participants</mat-label><br>
+              <mat-label>{{'cPart'|translate}}</mat-label><br>
               <input type="text" id="participants" name="participants" placeholder="Participants" required formControlName="participants" [ngClass]="{ 'has-error': formControls2.participants.errors }">
               <div *ngIf="formControls2.participants.errors">
-                <mat-error *ngIf="formControls2.participants.errors?.required">Participants is required</mat-error>
-                <mat-error *ngIf="formControls2.participants.errors?.participants">Participants must be valid</mat-error>
+                <mat-error *ngIf="formControls2.participants.errors?.required">{{'cPart'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls2.participants.errors?.participants">{{'cPart'|translate}} {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
             <div>
               <div>
-                <mat-label>Room</mat-label>
+                <mat-label>{{'cRooms'|translate}}</mat-label>
                 <mat-select formControlName="room" [ngClass]="{ 'has-error': formControls2.room.errors }">
                   <mat-option *ngFor="let eventRoom of rooms" [value]="eventRoom._id">
                     {{eventRoom.name}}&#8212;{{eventRoom.roomId}}
                   </mat-option>
                 </mat-select>
                 <div *ngIf="formControls2.room.errors">
-                  <mat-error *ngIf="formControls2.room.errors?.required">Room is required</mat-error>
-                  <mat-error *ngIf="formControls2.room.errors?.room">Room must be valid</mat-error>
+                  <mat-error *ngIf="formControls2.room.errors?.required">{{'cRooms'|translate}} {{'cRequired'|translate}}</mat-error>
+                  <mat-error *ngIf="formControls2.room.errors?.room">{{'cRooms'|translate}} {{'cInvalid'|translate}}</mat-error>
                 </div>
               </div>
             </div>
             <br>
             <div>
-              <mat-label>Date</mat-label><br>
+              <mat-label>{{'cDate'|translate}}</mat-label><br>
               <mat-date-range-input [rangePicker]="picker">
                 <input matStartDate placeholder="Start date" required formControlName="fromDate" [ngClass]="{ 'has-error': formControls2.fromDate.errors }">
                 <input matEndDate placeholder="End date" required formControlName="toDate" [ngClass]="{ 'has-error': formControls2.toDate.errors }">
@@ -105,16 +106,16 @@
               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
               <mat-date-range-picker #picker></mat-date-range-picker>
               <div *ngIf="formControls2.fromDate.errors">
-                <mat-error *ngIf="formControls2.fromDate.errors?.required">Start Date is required</mat-error>
-                <mat-error *ngIf="formControls2.fromDate.hasError('matStartDateInvalid')">Start Date must be valid</mat-error>
+                <mat-error *ngIf="formControls2.fromDate.errors?.required">Start {{'cDate'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls2.fromDate.hasError('matStartDateInvalid')">Start {{'cDate'|translate}} {{'cInvalid'|translate}}</mat-error>
               </div>
               <div *ngIf="formControls2.toDate.errors">
-                <mat-error *ngIf="formControls2.toDate.errors?.required">End Date is required</mat-error>
-                <mat-error *ngIf="formControls2.toDate.hasError('matEndDateInvalid')">End Date must be valid</mat-error>
+                <mat-error *ngIf="formControls2.toDate.errors?.required">End {{'cDate'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls2.toDate.hasError('matEndDateInvalid')">End {{'cDate'|translate}} {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <mat-action-row>
-                <button mat-raised-button class="button"><b>Create</b></button>
+                <button mat-raised-button class="button"><b>{{'cCreate'|translate}}</b></button>
             </mat-action-row>
 
           </form> 
@@ -122,15 +123,16 @@
         </mat-tab>
 
         <!-- Create Room  -->
-    <mat-tab label="Roooms">
+    <mat-tab label="Rooms">
         <!-- <ng-template matTabContent> -->
+          <mat-label class="title">{{'cCreate'|translate}} {{'cRooms'|translate}}</mat-label>
         <form [formGroup]="RoomForm" (ngSubmit)="createRoom()">
             <div>
-              <mat-label>Room Id</mat-label><br>
+              <mat-label>{{'cRooms'|translate}} ID</mat-label><br>
               <input type="number" id="roomId" name="roomId" placeholder="Room Id" min="0" required formControlName="roomId" [ngClass]="{ 'has-error': formControls3.roomId.errors }" />
               <div *ngIf="formControls3.roomId.errors">
-                <mat-error *ngIf="formControls3.roomId.errors?.required">Room Id is required</mat-error>
-                <mat-error *ngIf="formControls3.roomId.errors?.title">Room Id must be valid</mat-error>
+                <mat-error *ngIf="formControls3.roomId.errors?.required">{{'cRooms'|translate}} ID {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls3.roomId.errors?.title">{{'cRooms'|translate}} ID {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
@@ -138,21 +140,21 @@
               <mat-label>Name</mat-label><br>
               <input type="text" id="name" name="name" placeholder="Name" required formControlName="name" [ngClass]="{ 'has-error': formControls3.name.errors }" />
               <div *ngIf="formControls3.name.errors">
-                <mat-error *ngIf="formControls3.name.errors?.required">Name is required</mat-error>
-                <mat-error *ngIf="formControls3.name.errors?.name">Name must be valid</mat-error>
+                <mat-error *ngIf="formControls3.name.errors?.required">Name {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls3.name.errors?.name">Name {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
             <div>
-              <mat-label>Description</mat-label><br>
+              <mat-label>{{'cDesc'|translate}}</mat-label><br>
               <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ 'has-error': formControls3.description.errors }" />
               <div *ngIf="formControls3.description.errors">
-                <mat-error *ngIf="formControls3.description.errors?.required">Description is required</mat-error>
-                <mat-error *ngIf="formControls3.description.errors?.description">Description must be valid</mat-error>
+                <mat-error *ngIf="formControls3.description.errors?.required">{{'cDesc'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls3.description.errors?.description">{{'cDesc'|translate}} {{'cDesc'|translate}}</mat-error>
               </div>
             </div>
             <br>
-            <p><button mat-button class="button">Create</button></p>
+            <p><button mat-button class="button">{{'cCreate'|translate}}</button></p>
           </form> 
         <!-- </ng-template> -->
         </mat-tab>
@@ -160,13 +162,14 @@
         <!-- Create Appointments -->
     <mat-tab label="Appointments">
         <!-- <ng-template matTabContent> -->
+          <mat-label class="title">{{'cCreate'|translate}} {{'cAppointments'|translate}}</mat-label>
             <form [formGroup]="AppForm" (ngSubmit)="createAppointment()">
                 <div>
                   <mat-label>Name</mat-label><br>
                   <input type="text" id="name" name="name" placeholder="Name" required formControlName="name" [ngClass]="{ 'has-error': formControls4.name.errors }" />
                   <div *ngIf="formControls4.name.errors">
-                    <mat-error *ngIf="formControls4.name.errors?.required">Name is required</mat-error>
-                    <mat-error *ngIf="formControls4.name.errors?.name">Name must be valid</mat-error>
+                    <mat-error *ngIf="formControls4.name.errors?.required">Name {{'cRequired'|translate}}</mat-error>
+                    <mat-error *ngIf="formControls4.name.errors?.name">Name {{'cInvalid'|translate}}</mat-error>
                   </div>
                 </div>
                 <br>
@@ -174,22 +177,22 @@
                   <mat-label>Email</mat-label><br>
                   <input type="email" id="email" name="email" placeholder="Email" required formControlName="email" [ngClass]="{ 'has-error': formControls4.email.errors }" />
                   <div *ngIf="formControls4.email.errors">
-                    <mat-error *ngIf="formControls4.email.errors?.required">Email is required</mat-error>
-                    <mat-error *ngIf="formControls4.email.errors?.email">Email must be valid</mat-error>
+                    <mat-error *ngIf="formControls4.email.errors?.required">Email {{'cRequired'|translate}}</mat-error>
+                    <mat-error *ngIf="formControls4.email.errors?.email">Email {{'cInvalid'|translate}}</mat-error>
                   </div>
                 </div>
                 <br>
                 <div>
-                    <mat-label>Description</mat-label><br>
+                    <mat-label>{{'cDesc'|translate}}</mat-label><br>
                     <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ 'has-error': formControls4.description.errors }" />
                     <div *ngIf="formControls4.description.errors">
-                      <mat-error *ngIf="formControls4.description.errors?.required">Description is required</mat-error>
-                      <mat-error *ngIf="formControls4.description.errors?.description">Description must be valid</mat-error>
+                      <mat-error *ngIf="formControls4.description.errors?.required">{{'cDesc'|translate}} {{'cRequired'|translate}}</mat-error>
+                      <mat-error *ngIf="formControls4.description.errors?.description">{{'cDesc'|translate}} {{'cInvalid'|translate}}</mat-error>
                     </div>
                   </div>
                 <br>
                 <div>
-                    <mat-label>Date</mat-label><br>
+                    <mat-label>{{'cDate'|translate}}</mat-label><br>
                     <mat-date-range-input [rangePicker]="picker">
                       <input matStartDate placeholder="Start date" required formControlName="fromDate" [ngClass]="{ 'has-error': formControls4.fromDate.errors }">
                       <input matEndDate placeholder="End date" required formControlName="toDate" [ngClass]="{ 'has-error': formControls4.toDate.errors }">
@@ -197,16 +200,16 @@
                     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-date-range-picker #picker></mat-date-range-picker>
                     <div *ngIf="formControls4.fromDate.errors">
-                      <mat-error *ngIf="formControls4.fromDate.errors?.required">Start Date is required</mat-error>
-                      <mat-error *ngIf="formControls4.fromDate.hasError('matStartDateInvalid')">Start Date must be valid</mat-error>
+                      <mat-error *ngIf="formControls4.fromDate.errors?.required">Start {{'cDate'|translate}} {{'cRequired'|translate}}</mat-error>
+                      <mat-error *ngIf="formControls4.fromDate.hasError('matStartDateInvalid')">Start {{'cDate'|translate}} {{'cInvalid'|translate}}</mat-error>
                     </div>
                     <div *ngIf="formControls4.toDate.errors">
-                      <mat-error *ngIf="formControls4.toDate.errors?.required">End Date is required</mat-error>
-                      <mat-error *ngIf="formControls4.toDate.hasError('matEndDateInvalid')">End Date must be valid</mat-error>
+                      <mat-error *ngIf="formControls4.toDate.errors?.required">End {{'cDate'|translate}} {{'cRequired'|translate}}</mat-error>
+                      <mat-error *ngIf="formControls4.toDate.hasError('matEndDateInvalid')">End {{'cDate'|translate}} {{'cInvalid'|translate}}</mat-error>
                     </div>
                   </div>
                 <br>
-                <p><button mat-button class="button">Create</button></p>
+                <p><button mat-button class="button">{{'cCreate'|translate}}</button></p>
               </form> 
         <!-- </ng-template> -->
         </mat-tab>
@@ -214,15 +217,15 @@
         <!-- Create User -->
     <mat-tab label="User">
         <!-- <ng-template matTabContent> -->
-            <mat-label>Create User</mat-label>
+            <mat-label class="title">{{'cCreate'|translate}} {{'cUser'|translate}}</mat-label>
 
             <form [formGroup]="UserForm" (ngSubmit)="createUser()">
                 <div>
                   <mat-label>Name</mat-label><br>
                   <input type="text" id="name" name="name" placeholder="Name" required formControlName="name" [ngClass]="{ 'has-error': formControls5.name.errors }" />
                   <div *ngIf="formControls5.name.errors">
-                    <mat-error *ngIf="formControls5.name.errors?.required">Name is required</mat-error>
-                    <mat-error *ngIf="formControls5.name.errors?.name">Name must be valid</mat-error>
+                    <mat-error *ngIf="formControls5.name.errors?.required">Name {{'cRequired'|translate}}</mat-error>
+                    <mat-error *ngIf="formControls5.name.errors?.name">Name {{'cInvalid'|translate}}</mat-error>
                   </div>
                 </div>
                 <br>
@@ -230,30 +233,30 @@
                   <mat-label>Email</mat-label><br>
                   <input type="email" id="email" name="email" placeholder="Email" required formControlName="email" [ngClass]="{ 'has-error': formControls5.email.errors }" />
                   <div *ngIf="formControls5.email.errors">
-                    <mat-error *ngIf="formControls5.email.errors?.required">Email is required</mat-error>
-                    <mat-error *ngIf="formControls5.email.errors?.email">Email must be valid</mat-error>
+                    <mat-error *ngIf="formControls5.email.errors?.required">Email {{'cRequired'|translate}}</mat-error>
+                    <mat-error *ngIf="formControls5.email.errors?.email">Email {{'cInvalid'|translate}}</mat-error>
                   </div>
                 </div>
                 <br>
                 <div>
-                  <mat-label>Password</mat-label><br>
+                  <mat-label>{{'cPassword'|translate}}</mat-label><br>
                   <input type="password" id="password" name="password" placeholder="Password" required formControlName="password" [ngClass]="{ 'has-error': formControls5.password.errors }">
                   <div *ngIf="formControls5.password.errors">
-                    <mat-error *ngIf="formControls5.password.errors?.required">Password is required</mat-error>
-                    <mat-error *ngIf="formControls5.password.errors?.password">Password must be valid</mat-error>
+                    <mat-error *ngIf="formControls5.password.errors?.required">{{'cPassword'|translate}} {{'cRequired'|translate}}</mat-error>
+                    <mat-error *ngIf="formControls5.password.errors?.password">{{'cPassword'|translate}} {{'cInvalid'|translate}}</mat-error>
                   </div>
                 </div>
                 <br>
                 <div>
-                  <mat-label>Confirm Password</mat-label><br>
+                  <mat-label>{{'cConfirm'|translate}} {{'cPassword'|translate}}</mat-label><br>
                   <input type="password" id="password2" name="password2" placeholder="Confirm Password" required formControlName="password2" [ngClass]="{ 'has-error': formControls5.password2.errors }">
                   <div *ngIf="formControls5.password2.errors">
-                    <mat-error *ngIf="formControls5.password2.errors?.required">Confirm Password is required</mat-error>
-                    <mat-error *ngIf="formControls5.password2.errors?.password2">Confirm Password must be valid</mat-error>
+                    <mat-error *ngIf="formControls5.password2.errors?.required">{{'cConfirm'|translate}} {{'cPassword'|translate}} {{'cRequired'|translate}}</mat-error>
+                    <mat-error *ngIf="formControls5.password2.errors?.password2">{{'cConfirm'|translate}} {{'cPassword'|translate}} {{'cInvalid'|translate}}</mat-error>
                   </div>
                 </div>
                 <br>
-                <p><button mat-raised-button class="button"><b>Create</b></button></p>
+                <p><button mat-raised-button class="button"><b>{{'cCreate'|translate}}</b></button></p>
               </form>
         <!-- </ng-template> -->
          </mat-tab>

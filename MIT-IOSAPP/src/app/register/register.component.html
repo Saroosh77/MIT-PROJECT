@@ -10,8 +10,8 @@
               <mat-label>Name</mat-label><br>
               <input type="text" id="name" name="name" placeholder="Name" required formControlName="name" [ngClass]="{ 'has-error': formControls.name.errors }" />
               <div *ngIf="formControls.name.errors">
-                <mat-error *ngIf="formControls.name.errors?.required">Name is required</mat-error>
-                <mat-error *ngIf="formControls.name.errors?.name">Name must be valid</mat-error>
+                <mat-error *ngIf="formControls.name.errors?.required">Name {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls.name.errors?.name">Name {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
@@ -19,30 +19,30 @@
               <mat-label>Email</mat-label><br>
               <input type="email" id="email" name="email" placeholder="Email" required formControlName="email" [ngClass]="{ 'has-error': formControls.email.errors }" />
               <div *ngIf="formControls.email.errors">
-                <mat-error *ngIf="formControls.email.errors?.required">Email is required</mat-error>
-                <mat-error *ngIf="formControls.email.errors?.email">Email must be valid</mat-error>
+                <mat-error *ngIf="formControls.email.errors?.required">Email {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls.email.errors?.email">Email {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
             <div>
-              <mat-label>Password</mat-label><br>
+              <mat-label>{{'cPassword'|translate}}</mat-label><br>
               <input type="password" id="password" name="password" placeholder="Password" required formControlName="password" [ngClass]="{ 'has-error': formControls.password.errors }">
               <div *ngIf="formControls.password.errors">
-                <mat-error *ngIf="formControls.password.errors?.required">Password is required</mat-error>
-                <mat-error *ngIf="formControls.password.errors?.password">Password must be valid</mat-error>
+                <mat-error *ngIf="formControls.password.errors?.required">{{'cPassword'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls.password.errors?.password">{{'cPassword'|translate}} {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
             <div>
-              <mat-label>Confirm Password</mat-label><br>
+              <mat-label>{{'cConfirm'|translate}} {{'cPassword'|translate}}</mat-label><br>
               <input type="password" id="password2" name="password2" placeholder="Confirm Password" required formControlName="password2" [ngClass]="{ 'has-error': formControls.password2.errors }">
               <div *ngIf="formControls.password2.errors">
-                <mat-error *ngIf="formControls.password2.errors?.required">Confirm Password is required</mat-error>
-                <mat-error *ngIf="formControls.password2.errors?.password2">Confirm Password must be valid</mat-error>
+                <mat-error *ngIf="formControls.password2.errors?.required">{{'cConfirm'|translate}} {{'cPassword'|translate}} {{'cRequired'|translate}}</mat-error>
+                <mat-error *ngIf="formControls.password2.errors?.password2">{{'cConfirm'|translate}} {{'cPassword'|translate}} {{'cInvalid'|translate}}</mat-error>
               </div>
             </div>
             <br>
-            <p><button mat-raised-button class="button"><b>Register</b></button></p>
+            <p><button mat-raised-button class="button"><b>{{'cRegister'|translate}}</b></button></p>
           </form>
     </mat-card>
 </div>

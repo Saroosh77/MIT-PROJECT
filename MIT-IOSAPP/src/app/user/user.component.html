@@ -1,19 +1,25 @@
 <p class="logout">
     <button mat-raised-button color="warn" (click)="logout()">
-    Logout
+        {{'cLogout'|translate}}
   </button>
 </p>
 
 <br>
 
-<div>
-
     <h1>
-        Welcome User 
+        {{'cStartText'|translate}}
     </h1>
 
     <div>
-        <app-admin></app-admin>
+        <strong>Name: {{name}}</strong>
+        <br>
+        <strong>E-Mail: {{email}}</strong>
     </div>
+
+<br>
+
+<div *ngIf="isUserAdmin()">
+
+        <app-admin></app-admin>
 
 </div>

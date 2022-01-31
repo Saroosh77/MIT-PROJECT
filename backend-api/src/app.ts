@@ -7,7 +7,6 @@ import roomsRouter from './routers/room.router'
 import userRouter from './routers/user.router'
 import authRouter from './routers/auth.router'
 import appointmentRouter from './routers/appointment.router'
-import internationalRouter from './routers/international.router'
 
 const port = process.env.PORT || 3000
 const hostname = process.env.HOST || "localhost"
@@ -21,7 +20,6 @@ app.use("/api/", roomsRouter)
 app.use("/api/", userRouter)
 app.use("/api/", authRouter)
 app.use("/api/", appointmentRouter)
-app.use("/api/", internationalRouter)
 
 app.get('/', async (request: express.Request, response: express.Response) => {
     response.send('Welcome to MIT-THD Project GET Call')

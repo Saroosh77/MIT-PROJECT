@@ -17,9 +17,19 @@ export class JwtService {
 
   constructor(private httpClient: HttpClient, public router: Router) { }
 
-  login(userData: User) {
-    console.log(userData.email + ";" + userData.password);
-    localStorage.setItem('access_token', userData.email + ";" + userData.password); // simple
+  login(data) {
+    console.log(data)
+    localStorage.setItem('access_token', data['result']['token']);
+    localStorage.setItem('user', JSON.stringify(data['result']['user']));
+  }
+
+  IsUserAdmin(): boolean {
+    var x = localStorage.getItem('user');
+    if (x) {
+      let user = JSON.parse(x);
+      return user.isAdmin; 
+    }
+    return false;
   }
 
   // register(userData: User) {

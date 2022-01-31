@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
   login(): void {
     this.service.loginUser(this.loginForm.value).subscribe({
       next: res => {
-        this.jwtservice.login(this.loginForm.value);
+        this.jwtservice.login(res);
         this.message = "Login Successful!";
         this.openSnackBar(this.message);
         this.router.navigateByUrl('/user');

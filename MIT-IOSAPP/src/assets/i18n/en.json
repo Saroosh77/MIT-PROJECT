@@ -24,6 +24,7 @@
     "cInfo": "Internal Information",
     "cNews": "News",
     "cEvents": "Events",
+    "cUser": "User",
     "chomeheading1": "Study & Research at DIT.",
     "chomeheading2": "Discover our Pioneering and Vibrant University",
     "cDate": "Date",
@@ -32,6 +33,12 @@
     "cFrom": "From",
     "cTo": "To",
     "cPassword": "Password",
+    "cConfirm": "Confirm",
     "cOrg": "Organizer",
-    "cPart": "Participants"
+    "cPart": "Participants",
+    "cCreate": "Create",
+    "cTitle": "Title",
+    "cRequired": "Required",
+    "cInvalid": "Invalid",
+    "cLogout": "LogOut"
 }

@@ -11,7 +11,7 @@ export class HomepageComponent implements OnInit {
   constructor(private service: NewsService) { }
 
   news = [];
-  externalLink = "https://www.th-deg.de/en/dit/current-information-concerning-the-winter-semester"
+  externalLink: string;
 
   ngOnInit(): void {
     this.getAll()
@@ -21,16 +21,7 @@ export class HomepageComponent implements OnInit {
     this.service.getNews().subscribe({
       next: data => {
         this.news = data['result'];
-        // this.isArticle = false;
-        // this.isArticles = true;
       },
-      // error: error => {
-      //   if(error['statusText'] == "Not Found") {
-      //     this.successMsg = "No Record Exist"
-      //   } else {
-      //     this.successMsg = "No Record Found"
-      //   }
-      // }
     });
   }
 

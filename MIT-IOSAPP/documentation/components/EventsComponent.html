@@ -1,0 +1,1139 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>mit-ws documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">mit-ws documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  EventsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/events/events.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-events</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./events.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./events.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createForm" >createForm</a>
+                            </li>
+                            <li>
+                                <a href="#event" >event</a>
+                            </li>
+                            <li>
+                                <a href="#events" >events</a>
+                            </li>
+                            <li>
+                                <a href="#rooms" >rooms</a>
+                            </li>
+                            <li>
+                                <a href="#successMsg" >successMsg</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createEvent" >createEvent</a>
+                            </li>
+                            <li>
+                                <a href="#getAll" >getAll</a>
+                            </li>
+                            <li>
+                                <a href="#getRoomsFromDb" >getRoomsFromDb</a>
+                            </li>
+                            <li>
+                                <a href="#gotoDetail" >gotoDetail</a>
+                            </li>
+                            <li>
+                                <a href="#initializeForm" >initializeForm</a>
+                            </li>
+                            <li>
+                                <a href="#isInput" >isInput</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#formControls" >formControls</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(service: <a href="../injectables/EventService.html" target="_self">EventService</a>, roomsService: <a href="../injectables/RoomsService.html" target="_self">RoomsService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/events/events.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EventService.html" target="_self" >EventService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roomsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoomsService.html" target="_self" >RoomsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createEvent"></a>
+                    <span class="name">
+                        <span ><b>createEvent</b></span>
+                        <a href="#createEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createEvent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/events/events.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAll"></a>
+                    <span class="name">
+                        <span ><b>getAll</b></span>
+                        <a href="#getAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAll()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/app/events/events.component.ts:30</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRoomsFromDb"></a>
+                    <span class="name">
+                        <span ><b>getRoomsFromDb</b></span>
+                        <a href="#getRoomsFromDb"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRoomsFromDb()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/events/events.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="gotoDetail"></a>
+                    <span class="name">
+                        <span ><b>gotoDetail</b></span>
+                        <a href="#gotoDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>gotoDetail(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/events/events.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeForm"></a>
+                    <span class="name">
+                        <span ><b>initializeForm</b></span>
+                        <a href="#initializeForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/events/events.component.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isInput"></a>
+                    <span class="name">
+                        <span ><b>isInput</b></span>
+                        <a href="#isInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isInput(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/events/events.component.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/events/events.component.ts:25</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForm"></a>
+                    <span class="name">
+                        <span ><b>createForm</b></span>
+                        <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/events/events.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="event"></a>
+                    <span class="name">
+                        <span ><b>event</b></span>
+                        <a href="#event"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/events/events.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="events"></a>
+                    <span class="name">
+                        <span ><b>events</b></span>
+                        <a href="#events"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/events/events.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rooms"></a>
+                    <span class="name">
+                        <span ><b>rooms</b></span>
+                        <a href="#rooms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/events/events.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="successMsg"></a>
+                    <span class="name">
+                        <span ><b>successMsg</b></span>
+                        <a href="#successMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/events/events.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formControls"></a>
+                        <span class="name"><b>formControls</b><a href="#formControls"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formControls()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/events/events.component.ts:23</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { EventService } from &#x27;./event.service&#x27;;
+import { RoomsService } from &#x27;./../rooms/rooms.service&#x27;;
+import { FormBuilder, FormControl, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { CreateEvent } from &#x27;../event&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+@Component({
+  selector: &#x27;app-events&#x27;,
+  templateUrl: &#x27;./events.component.html&#x27;,
+  styleUrls: [&#x27;./events.component.css&#x27;]
+})
+export class EventsComponent implements OnInit {
+
+  constructor(private service: EventService, private roomsService: RoomsService, private router: Router, private formBuilder: FormBuilder) { }
+
+  event: object;
+  events &#x3D; [];
+  successMsg: string;
+  createForm: FormGroup;
+  rooms &#x3D; []
+
+  get formControls() { return this.createForm.controls; }
+
+  ngOnInit(): void {
+    this.getAll()
+    this.initializeForm()
+  }
+
+  getAll(): void {
+    this.service.getEvent().subscribe({
+      next: data &#x3D;&gt; {
+        this.events &#x3D; data[&#x27;result&#x27;];
+        for (let i &#x3D; 0; i &lt; this.events.length; i++) {
+          this.roomsService.getRoomById(this.events[i][&#x27;room&#x27;]).subscribe(data &#x3D;&gt; {
+            this.events[i][&#x27;room&#x27;] &#x3D; data[&#x27;result&#x27;];
+          });
+        }
+      },
+      error: error &#x3D;&gt; {
+        if (error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Not Found&quot;) {
+          this.successMsg &#x3D; &quot;No Record Exist&quot;
+        } else {
+          this.successMsg &#x3D; &quot;No Record Found&quot;
+        }
+      }
+    });
+  }
+
+  gotoDetail(id: string): void {
+    this.service.getEventById(id).subscribe({
+      next: data &#x3D;&gt; {
+        this.event &#x3D; data[&#x27;result&#x27;];
+        this.roomsService.getRoomById(this.event[&#x27;room&#x27;]).subscribe(data &#x3D;&gt; {
+          this.event[&#x27;room&#x27;] &#x3D; data[&#x27;result&#x27;];
+        });
+      },
+      error: error &#x3D;&gt; {
+        if (error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Not Found&quot;) {
+          this.successMsg &#x3D; &quot;No Detail Exist&quot;
+        } else {
+          this.successMsg &#x3D; &quot;No Detail Found&quot;
+        }
+      }
+    });
+  }
+
+  getRoomsFromDb(): void {
+    this.roomsService.getFreeRooms().subscribe({
+      next: data &#x3D;&gt; {
+        this.rooms &#x3D; data[&#x27;result&#x27;];
+      },
+      error: error &#x3D;&gt; {
+        if (error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Not Found&quot;) {
+          this.successMsg &#x3D; &quot;Please Create Room First&quot;
+        } else {
+          this.successMsg &#x3D; &quot;No Room Found&quot;
+        }
+      }
+    });
+  }
+
+  initializeForm() {
+    this.createForm &#x3D; this.formBuilder.group({
+      title: new FormControl(&#x27;&#x27;, Validators.required),
+      description: new FormControl(&#x27;&#x27;, Validators.required),
+      organiser: new FormControl(&#x27;&#x27;, Validators.required),
+      participants: new FormControl(&#x27;&#x27;, Validators.required),
+      room: new FormControl(&#x27;&#x27;, Validators.required),
+      fromDate: new FormControl(&#x27;&#x27;, Validators.required),
+      toDate: new FormControl(&#x27;&#x27;, Validators.required)
+    });
+    this.getRoomsFromDb();
+  }
+
+  createEvent(): void {
+    console.log(this.createForm.value)
+    console.log(this.createForm.value.room)
+    if (this.isInput(this.createForm.value.title) &amp;&amp; this.isInput(this.createForm.value.description) &amp;&amp; this.isInput(this.createForm.value.organiser) &amp;&amp; this.isInput(this.createForm.value.participants) &amp;&amp; this.isInput(this.createForm.value.room) &amp;&amp; this.createForm.valid) {
+      var event: CreateEvent &#x3D; {
+        title: this.createForm.value.title,
+        description: this.createForm.value.description,
+        organiser: this.createForm.value.organiser,
+        participants: this.createForm.value.participants,
+        room: this.createForm.value.room,
+        event_from: this.createForm.value.fromDate.toISOString(),
+        event_to: this.createForm.value.toDate.toISOString()
+      }
+      this.service.createEvent(event).subscribe({
+        next: data &#x3D;&gt; {
+          console.log(data)
+          this.successMsg &#x3D; &quot;Event Created Successful&quot;
+        },
+        error: error &#x3D;&gt; {
+          console.log(error)
+          if (error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Bad Request&quot;) {
+            this.successMsg &#x3D; &quot;Event Already Exist&quot;
+          } else {
+            this.successMsg &#x3D; &quot;Event Not Created&quot;
+          }
+        }
+      })
+    } else if (!this.isInput(this.createForm.value.title) &amp;&amp; !this.isInput(this.createForm.value.description) &amp;&amp; !this.isInput(this.createForm.value.organiser) &amp;&amp; !this.isInput(this.createForm.value.participants) &amp;&amp; !this.isInput(this.createForm.value.room)) {
+      this.successMsg &#x3D; &quot;Title or Description or Link Is Empty&quot;
+    } else if (!this.isInput(this.createForm.value.title)) {
+      this.successMsg &#x3D; &quot;Title is Not Valid&quot;
+    } else if (!this.isInput(this.createForm.value.description)) {
+      this.successMsg &#x3D; &quot;Description is Not Valid&quot;
+    } else if (!this.isInput(this.createForm.value.organiser)) {
+      this.successMsg &#x3D; &quot;Organiser is Not Valid&quot;
+    } else if (!this.isInput(this.createForm.value.participants)) {
+      this.successMsg &#x3D; &quot;Participants is Not Valid&quot;
+    } else if (this.createForm.value.title &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Title is Required&quot;
+    } else if (this.createForm.value.description &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Description is Required&quot;
+    } else if (this.createForm.value.organiser &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Organiser is Required&quot;
+    } else if (this.createForm.value.participants &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Participants is Required&quot;
+    } else {
+      this.successMsg &#x3D; &quot;Form is Not Valid&quot;
+    }
+    if(this.createForm.valid){
+    this.router.navigate([&#x27;/events&#x27;]);
+    }
+  }
+
+  isInput(name: string): Boolean {
+    return (name !&#x3D; &quot;&quot; &amp;&amp; name !&#x3D; null &amp;&amp; name !&#x3D; undefined) ? true : false
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div&gt;
+    &lt;h1&gt;{{&#x27;cEvents&#x27;|translate}}&lt;/h1&gt;
+
+    &lt;br&gt;
+
+
+
+  
+
+    &lt;div class&#x3D;&quot;border&quot;&gt;
+        &lt;mat-grid-list cols&#x3D;&quot;5&quot; rowHeight&#x3D;&quot;50&quot; role&#x3D;&quot;list&quot; gutterSize&#x3D;&quot;1px&quot;&gt;
+            &lt;mat-grid-tile role&#x3D;&quot;listitem&quot;&gt;
+                &lt;strong&gt;{{&#x27;cDate&#x27;|translate}}&lt;/strong&gt;
+            &lt;/mat-grid-tile&gt;
+            &lt;mat-grid-tile role&#x3D;&quot;listitem&quot;&gt;
+                &lt;strong&gt;{{&#x27;cDesc&#x27;|translate}}&lt;/strong&gt;
+            &lt;/mat-grid-tile&gt;
+            &lt;mat-grid-tile role&#x3D;&quot;listitem&quot;&gt;
+                &lt;strong&gt;{{&#x27;cOrg&#x27;|translate}}&lt;/strong&gt;
+            &lt;/mat-grid-tile&gt;
+            &lt;mat-grid-tile role&#x3D;&quot;listitem&quot;&gt;
+                &lt;strong&gt;{{&#x27;cPart&#x27;|translate}}&lt;/strong&gt;
+            &lt;/mat-grid-tile&gt;
+            &lt;mat-grid-tile role&#x3D;&quot;listitem&quot;&gt;
+                &lt;strong&gt;{{&#x27;cRooms&#x27;|translate}}&lt;/strong&gt;
+            &lt;/mat-grid-tile&gt;
+        &lt;/mat-grid-list&gt;
+    &lt;/div&gt;
+&lt;br&gt;
+    &lt;div *ngFor&#x3D;&quot;let event of events&quot;&gt;
+        &lt;mat-grid-list cols&#x3D;&quot;5&quot; rowHeight&#x3D;&quot;50&quot; role&#x3D;&quot;list&quot; gutterSize&#x3D;&quot;1px&quot;&gt;
+            &lt;mat-grid-tile role&#x3D;&quot;listitem&quot;&gt;
+                {{ event.created_at | date }}
+            &lt;/mat-grid-tile&gt;
+            &lt;mat-grid-tile class&#x3D;&quot;tile&quot; role&#x3D;&quot;listitem&quot;&gt;
+                {{ event.title }} &lt;br&gt; {{ event.description}}
+            &lt;/mat-grid-tile&gt;
+            &lt;mat-grid-tile class&#x3D;&quot;tile&quot; role&#x3D;&quot;listitem&quot;&gt;
+                {{ event.organiser}}
+            &lt;/mat-grid-tile&gt;
+            &lt;mat-grid-tile class&#x3D;&quot;tile&quot; role&#x3D;&quot;listitem&quot;&gt;
+                {{ event.participants}}
+            &lt;/mat-grid-tile&gt;
+            &lt;mat-grid-tile class&#x3D;&quot;tile&quot; role&#x3D;&quot;listitem&quot;&gt;
+                {{ event.room.name}}
+            &lt;/mat-grid-tile&gt;
+        &lt;/mat-grid-list&gt;
+        &lt;br&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./events.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.text {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.tile {
+    text-align: center;
+}
+
+.border {
+    border: solid 1px #000;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div>    <h1>{{\'cEvents\'|translate}}</h1>    <br>      <div class="border">        <mat-grid-list cols="5" rowHeight="50" role="list" gutterSize="1px">            <mat-grid-tile role="listitem">                <strong>{{\'cDate\'|translate}}</strong>            </mat-grid-tile>            <mat-grid-tile role="listitem">                <strong>{{\'cDesc\'|translate}}</strong>            </mat-grid-tile>            <mat-grid-tile role="listitem">                <strong>{{\'cOrg\'|translate}}</strong>            </mat-grid-tile>            <mat-grid-tile role="listitem">                <strong>{{\'cPart\'|translate}}</strong>            </mat-grid-tile>            <mat-grid-tile role="listitem">                <strong>{{\'cRooms\'|translate}}</strong>            </mat-grid-tile>        </mat-grid-list>    </div><br>    <div *ngFor="let event of events">        <mat-grid-list cols="5" rowHeight="50" role="list" gutterSize="1px">            <mat-grid-tile role="listitem">                {{ event.created_at | date }}            </mat-grid-tile>            <mat-grid-tile class="tile" role="listitem">                {{ event.title }} <br> {{ event.description}}            </mat-grid-tile>            <mat-grid-tile class="tile" role="listitem">                {{ event.organiser}}            </mat-grid-tile>            <mat-grid-tile class="tile" role="listitem">                {{ event.participants}}            </mat-grid-tile>            <mat-grid-tile class="tile" role="listitem">                {{ event.room.name}}            </mat-grid-tile>        </mat-grid-list>        <br>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppointmentsComponent', 'selector': 'app-appointments'},{'name': 'EventsComponent', 'selector': 'app-events'},{'name': 'GeocodingComponent', 'selector': 'app-geocoding'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'InternalinfoComponent', 'selector': 'app-internal-info'},{'name': 'InternationalComponent', 'selector': 'app-international'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultsListComponent', 'selector': 'app-results-list'},{'name': 'RoomsComponent', 'selector': 'app-rooms'},{'name': 'UserComponent', 'selector': 'app-user'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'EventsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EventsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

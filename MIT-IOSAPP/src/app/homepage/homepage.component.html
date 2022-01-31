@@ -18,10 +18,10 @@
 
 <div *ngFor="let nw of news">
     <div class="text">
-        {{ nw.created_at | date }} | <a class="link" href={{externalLink}} target="_blank"> {{ nw.title }} </a>
+        {{ nw.created_at | date }} | <a class="link" href={{nw.link}} target="_blank"> {{ nw.title }} </a>
     </div>
     <div class="desc">
-        {{ (nw.description.length> 500)? (nw.description | slice:0:500)+'...':(nw.description) }}
+        {{ (nw.description.length> 555)? (nw.description | slice:0:553)+'...':(nw.description) }}
     </div>
     <hr>
 </div>

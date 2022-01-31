@@ -17,10 +17,10 @@ export class JwtService {
 
   constructor(private httpClient: HttpClient, public router: Router) { }
 
-  // login(userData: User) {
-  //   console.log(userData.email + ";" + userData.password);
-  //   localStorage.setItem('access_token', userData.email + ";" + userData.password); // simple
-  // }
+  login(userData: User) {
+    console.log(userData.email + ";" + userData.password);
+    localStorage.setItem('access_token', userData.email + ";" + userData.password); // simple
+  }
 
   // register(userData: User) {
   //   let un = userData.username;

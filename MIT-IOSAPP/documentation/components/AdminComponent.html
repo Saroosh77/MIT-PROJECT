@@ -1,0 +1,2454 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>mit-ws documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">mit-ws documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AdminComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/admin/admin.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-admin</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./admin.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./admin.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#AppForm" >AppForm</a>
+                            </li>
+                            <li>
+                                <a href="#event" >event</a>
+                            </li>
+                            <li>
+                                <a href="#EventForm" >EventForm</a>
+                            </li>
+                            <li>
+                                <a href="#events" >events</a>
+                            </li>
+                            <li>
+                                <a href="#NewsForm" >NewsForm</a>
+                            </li>
+                            <li>
+                                <a href="#RoomForm" >RoomForm</a>
+                            </li>
+                            <li>
+                                <a href="#rooms" >rooms</a>
+                            </li>
+                            <li>
+                                <a href="#successMsg" >successMsg</a>
+                            </li>
+                            <li>
+                                <a href="#UserForm" >UserForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createAppointment" >createAppointment</a>
+                            </li>
+                            <li>
+                                <a href="#createEvent" >createEvent</a>
+                            </li>
+                            <li>
+                                <a href="#createNews" >createNews</a>
+                            </li>
+                            <li>
+                                <a href="#createRoom" >createRoom</a>
+                            </li>
+                            <li>
+                                <a href="#createUser" >createUser</a>
+                            </li>
+                            <li>
+                                <a href="#getRoomsFromDb" >getRoomsFromDb</a>
+                            </li>
+                            <li>
+                                <a href="#initializeAppForm" >initializeAppForm</a>
+                            </li>
+                            <li>
+                                <a href="#initializeEventForm" >initializeEventForm</a>
+                            </li>
+                            <li>
+                                <a href="#initializeNewsForm" >initializeNewsForm</a>
+                            </li>
+                            <li>
+                                <a href="#initializeRoomForm" >initializeRoomForm</a>
+                            </li>
+                            <li>
+                                <a href="#initializeUserForm" >initializeUserForm</a>
+                            </li>
+                            <li>
+                                <a href="#isEmail" >isEmail</a>
+                            </li>
+                            <li>
+                                <a href="#isInput" >isInput</a>
+                            </li>
+                            <li>
+                                <a href="#isNumber" >isNumber</a>
+                            </li>
+                            <li>
+                                <a href="#isPassword" >isPassword</a>
+                            </li>
+                            <li>
+                                <a href="#isUrl" >isUrl</a>
+                            </li>
+                            <li>
+                                <a href="#logout" >logout</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openSnackBar" >openSnackBar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#formControls1" >formControls1</a>
+                                </li>
+                                <li>
+                                    <a href="#formControls2" >formControls2</a>
+                                </li>
+                                <li>
+                                    <a href="#formControls3" >formControls3</a>
+                                </li>
+                                <li>
+                                    <a href="#formControls4" >formControls4</a>
+                                </li>
+                                <li>
+                                    <a href="#formControls5" >formControls5</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(eventService: <a href="../injectables/EventService.html" target="_self">EventService</a>, roomsService: <a href="../injectables/RoomsService.html" target="_self">RoomsService</a>, newsService: <a href="../injectables/NewsService.html" target="_self">NewsService</a>, appointmentService: <a href="../injectables/AppointmentsService.html" target="_self">AppointmentsService</a>, userService: <a href="../injectables/RegisterService.html" target="_self">RegisterService</a>, jwtService: <a href="../injectables/JwtService.html" target="_self">JwtService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, snackbar: MatSnackBar)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/admin/admin.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>eventService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EventService.html" target="_self" >EventService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roomsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoomsService.html" target="_self" >RoomsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>newsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NewsService.html" target="_self" >NewsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appointmentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppointmentsService.html" target="_self" >AppointmentsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RegisterService.html" target="_self" >RegisterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>jwtService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/JwtService.html" target="_self" >JwtService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackbar</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatSnackBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createAppointment"></a>
+                    <span class="name">
+                        <span ><b>createAppointment</b></span>
+                        <a href="#createAppointment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createAppointment()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/app/admin/admin.component.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createEvent"></a>
+                    <span class="name">
+                        <span ><b>createEvent</b></span>
+                        <a href="#createEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createEvent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/admin/admin.component.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createNews"></a>
+                    <span class="name">
+                        <span ><b>createNews</b></span>
+                        <a href="#createNews"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createNews()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="214"
+                            class="link-to-prism">src/app/admin/admin.component.ts:214</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createRoom"></a>
+                    <span class="name">
+                        <span ><b>createRoom</b></span>
+                        <a href="#createRoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createRoom()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="255"
+                            class="link-to-prism">src/app/admin/admin.component.ts:255</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createUser"></a>
+                    <span class="name">
+                        <span ><b>createUser</b></span>
+                        <a href="#createUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="297"
+                            class="link-to-prism">src/app/admin/admin.component.ts:297</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRoomsFromDb"></a>
+                    <span class="name">
+                        <span ><b>getRoomsFromDb</b></span>
+                        <a href="#getRoomsFromDb"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRoomsFromDb()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/admin/admin.component.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeAppForm"></a>
+                    <span class="name">
+                        <span ><b>initializeAppForm</b></span>
+                        <a href="#initializeAppForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeAppForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/admin/admin.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeEventForm"></a>
+                    <span class="name">
+                        <span ><b>initializeEventForm</b></span>
+                        <a href="#initializeEventForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeEventForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/admin/admin.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeNewsForm"></a>
+                    <span class="name">
+                        <span ><b>initializeNewsForm</b></span>
+                        <a href="#initializeNewsForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeNewsForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/admin/admin.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeRoomForm"></a>
+                    <span class="name">
+                        <span ><b>initializeRoomForm</b></span>
+                        <a href="#initializeRoomForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeRoomForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/admin/admin.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeUserForm"></a>
+                    <span class="name">
+                        <span ><b>initializeUserForm</b></span>
+                        <a href="#initializeUserForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeUserForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/admin/admin.component.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isEmail"></a>
+                    <span class="name">
+                        <span ><b>isEmail</b></span>
+                        <a href="#isEmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isEmail(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="343"
+                            class="link-to-prism">src/app/admin/admin.component.ts:343</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isInput"></a>
+                    <span class="name">
+                        <span ><b>isInput</b></span>
+                        <a href="#isInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isInput(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="339"
+                            class="link-to-prism">src/app/admin/admin.component.ts:339</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNumber"></a>
+                    <span class="name">
+                        <span ><b>isNumber</b></span>
+                        <a href="#isNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isNumber(number: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="357"
+                            class="link-to-prism">src/app/admin/admin.component.ts:357</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>number</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isPassword"></a>
+                    <span class="name">
+                        <span ><b>isPassword</b></span>
+                        <a href="#isPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isPassword(pass1: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, pass2: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="348"
+                            class="link-to-prism">src/app/admin/admin.component.ts:348</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pass1</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pass2</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isUrl"></a>
+                    <span class="name">
+                        <span ><b>isUrl</b></span>
+                        <a href="#isUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isUrl(url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="352"
+                            class="link-to-prism">src/app/admin/admin.component.ts:352</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="362"
+                            class="link-to-prism">src/app/admin/admin.component.ts:362</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/admin/admin.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openSnackBar"></a>
+                    <span class="name">
+                        <span ><b>openSnackBar</b></span>
+                        <a href="#openSnackBar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openSnackBar(message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="367"
+                            class="link-to-prism">src/app/admin/admin.component.ts:367</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="AppForm"></a>
+                    <span class="name">
+                        <span ><b>AppForm</b></span>
+                        <a href="#AppForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/admin/admin.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="event"></a>
+                    <span class="name">
+                        <span ><b>event</b></span>
+                        <a href="#event"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/admin/admin.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="EventForm"></a>
+                    <span class="name">
+                        <span ><b>EventForm</b></span>
+                        <a href="#EventForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/admin/admin.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="events"></a>
+                    <span class="name">
+                        <span ><b>events</b></span>
+                        <a href="#events"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/admin/admin.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="NewsForm"></a>
+                    <span class="name">
+                        <span ><b>NewsForm</b></span>
+                        <a href="#NewsForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/admin/admin.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="RoomForm"></a>
+                    <span class="name">
+                        <span ><b>RoomForm</b></span>
+                        <a href="#RoomForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/admin/admin.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rooms"></a>
+                    <span class="name">
+                        <span ><b>rooms</b></span>
+                        <a href="#rooms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/admin/admin.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="successMsg"></a>
+                    <span class="name">
+                        <span ><b>successMsg</b></span>
+                        <a href="#successMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/admin/admin.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UserForm"></a>
+                    <span class="name">
+                        <span ><b>UserForm</b></span>
+                        <a href="#UserForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/admin/admin.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formControls1"></a>
+                        <span class="name"><b>formControls1</b><a href="#formControls1"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formControls1()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/admin/admin.component.ts:35</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formControls2"></a>
+                        <span class="name"><b>formControls2</b><a href="#formControls2"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formControls2()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/admin/admin.component.ts:36</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formControls3"></a>
+                        <span class="name"><b>formControls3</b><a href="#formControls3"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formControls3()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/admin/admin.component.ts:37</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formControls4"></a>
+                        <span class="name"><b>formControls4</b><a href="#formControls4"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formControls4()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/admin/admin.component.ts:38</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formControls5"></a>
+                        <span class="name"><b>formControls5</b><a href="#formControls5"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formControls5()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/admin/admin.component.ts:39</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { EventService } from &#x27;./../events/event.service&#x27;;
+import { RoomsService } from &#x27;./../rooms/rooms.service&#x27;;
+import { NewsService } from &#x27;./../homepage/news.service&#x27;;
+import { AppointmentsService } from &#x27;./../appointments/appointments.service&#x27;;
+import { RegisterService } from &#x27;./../register/register.service&#x27;;
+import { FormBuilder, FormControl, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { CreateEvent } from &#x27;../event&#x27;;
+import { CreateNews } from &#x27;../news&#x27;;
+import { CreateRoom } from &#x27;../rooms&#x27;;
+import { Appointment } from &#x27;../appointment&#x27;;
+import { CreateUser } from &#x27;../user&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { JwtService } from &#x27;../jwt.service&#x27;;
+import { MatSnackBar } from &#x27;@angular/material/snack-bar&#x27;;
+
+@Component({
+  selector: &#x27;app-admin&#x27;,
+  templateUrl: &#x27;./admin.component.html&#x27;,
+  styleUrls: [&#x27;./admin.component.css&#x27;]
+})
+export class AdminComponent implements OnInit {
+
+  event: object;
+  events &#x3D; [];
+  successMsg: string;
+  NewsForm: FormGroup;
+  EventForm: FormGroup;
+  RoomForm: FormGroup;
+  AppForm: FormGroup;
+  UserForm: FormGroup;
+  rooms &#x3D; []
+  // selected: any;
+
+  get formControls1() { return this.NewsForm.controls; }
+  get formControls2() { return this.EventForm.controls; }
+  get formControls3() { return this.RoomForm.controls; }
+  get formControls4() { return this.AppForm.controls; }
+  get formControls5() { return this.UserForm.controls; }
+  
+  constructor(private eventService: EventService, private roomsService: RoomsService, private newsService: NewsService, private appointmentService: AppointmentsService, private userService: RegisterService, private jwtService: JwtService, private router: Router, private formBuilder: FormBuilder, private snackbar: MatSnackBar) { }
+
+  ngOnInit(): void {
+    this.initializeNewsForm()
+    this.initializeEventForm()
+    this.initializeRoomForm()
+    this.initializeAppForm()
+    this.initializeUserForm()
+  }
+
+  getRoomsFromDb(): void {
+    this.roomsService.getFreeRooms().subscribe({
+      next: data &#x3D;&gt; {
+        this.rooms &#x3D; data[&#x27;result&#x27;];
+      },
+      error: error &#x3D;&gt; {
+        if (error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Not Found&quot;) {
+          this.successMsg &#x3D; &quot;Please Create Room First&quot;
+        } else {
+          this.successMsg &#x3D; &quot;No Room Found&quot;
+        }
+      }
+    });
+  }
+
+
+
+  initializeNewsForm() {
+
+        this.NewsForm &#x3D; this.formBuilder.group({
+          title: new FormControl(&#x27;&#x27;, Validators.required),
+          description: new FormControl(&#x27;&#x27;, Validators.required),
+          link: new FormControl(&#x27;http://&#x27;, Validators.required)
+        });
+      }
+
+  initializeEventForm() {
+
+        this.EventForm &#x3D; this.formBuilder.group({
+          title: new FormControl(&#x27;&#x27;, Validators.required),
+          description: new FormControl(&#x27;&#x27;, Validators.required),
+          organiser: new FormControl(&#x27;&#x27;, Validators.required),
+          participants: new FormControl(&#x27;&#x27;, Validators.required),
+          room: new FormControl(&#x27;&#x27;, Validators.required),
+          fromDate: new FormControl(&#x27;&#x27;, Validators.required),
+          toDate: new FormControl(&#x27;&#x27;, Validators.required)
+        });
+        this.getRoomsFromDb();
+       
+  }
+
+  initializeRoomForm() {
+        this.RoomForm &#x3D; this.formBuilder.group({
+          roomId: new FormControl(0, Validators.required),
+          name: new FormControl(&#x27;&#x27;, Validators.required),
+          description: new FormControl(&#x27;&#x27;, Validators.required)
+        });
+  }
+
+  initializeAppForm() {
+        this.AppForm &#x3D; this.formBuilder.group({
+          name: new FormControl(&#x27;&#x27;, Validators.required),
+          email: new FormControl(&#x27;&#x27;, Validators.required),
+          description: new FormControl(&#x27;&#x27;, Validators.required),
+          fromDate: new FormControl(&#x27;&#x27;, Validators.required),
+          toDate: new FormControl(&#x27;&#x27;, Validators.required)
+        });
+  }
+
+  initializeUserForm() {
+        this.UserForm &#x3D; this.formBuilder.group({
+          name: new FormControl(&#x27;&#x27;, Validators.required),
+          email: new FormControl(&#x27;&#x27;, Validators.required),
+          password: new FormControl(&#x27;&#x27;, Validators.required),
+          password2: new FormControl(&#x27;&#x27;, Validators.required)
+        });
+      }
+ 
+
+  //Create Event
+  createEvent(): void {
+    console.log(this.EventForm.value)
+    console.log(this.EventForm.value.room)
+    if (this.isInput(this.EventForm.value.title) &amp;&amp; this.isInput(this.EventForm.value.description) &amp;&amp; this.isInput(this.EventForm.value.organiser) &amp;&amp; this.isInput(this.EventForm.value.participants) &amp;&amp; this.isInput(this.EventForm.value.room) &amp;&amp; this.EventForm.valid) {
+      var event: CreateEvent &#x3D; {
+        title: this.EventForm.value.title,
+        description: this.EventForm.value.description,
+        organiser: this.EventForm.value.organiser,
+        participants: this.EventForm.value.participants,
+        room: this.EventForm.value.room,
+        event_from: this.EventForm.value.fromDate.toISOString(),
+        event_to: this.EventForm.value.toDate.toISOString()
+      }
+      this.eventService.createEvent(event).subscribe({
+        next: data &#x3D;&gt; {
+          console.log(data)
+          this.successMsg &#x3D; &quot;Event Created Successfully!&quot;
+
+        },
+        error: error &#x3D;&gt; {
+          console.log(error)
+          if (error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Bad Request&quot;) {
+            this.successMsg &#x3D; &quot;Event Already Exist&quot;
+          } else {
+            this.successMsg &#x3D; &quot;Event Not Created&quot;
+          }
+        }
+      })
+    } else if (!this.isInput(this.EventForm.value.title) &amp;&amp; !this.isInput(this.EventForm.value.description) &amp;&amp; !this.isInput(this.EventForm.value.organiser) &amp;&amp; !this.isInput(this.EventForm.value.participants) &amp;&amp; !this.isInput(this.EventForm.value.room)) {
+      this.successMsg &#x3D; &quot;Title or Description or Link Is Empty&quot;
+    } else if (!this.isInput(this.EventForm.value.title)) {
+      this.successMsg &#x3D; &quot;Title is Not Valid&quot;
+    } else if (!this.isInput(this.EventForm.value.description)) {
+      this.successMsg &#x3D; &quot;Description is Not Valid&quot;
+    } else if (!this.isInput(this.EventForm.value.organiser)) {
+      this.successMsg &#x3D; &quot;Organiser is Not Valid&quot;
+    } else if (!this.isInput(this.EventForm.value.participants)) {
+      this.successMsg &#x3D; &quot;Participants is Not Valid&quot;
+    } else if (this.EventForm.value.title &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Title is Required&quot;
+    } else if (this.EventForm.value.description &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Description is Required&quot;
+    } else if (this.EventForm.value.organiser &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Organiser is Required&quot;
+    } else if (this.EventForm.value.participants &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Participants is Required&quot;
+    } else {
+      this.successMsg &#x3D; &quot;Form is Not Valid&quot;
+    }
+  }
+
+  //Create Appointment
+  createAppointment(): void {
+    if(this.isInput(this.AppForm.value.title) &amp;&amp; this.isInput(this.AppForm.value.description) &amp;&amp; this.isUrl(this.AppForm.value.link) &amp;&amp; this.AppForm.valid) {
+      var appointment: Appointment &#x3D; {
+        name: this.AppForm.value.name,
+        email: this.AppForm.value.email,
+        description: this.AppForm.value.description,
+        booked_from: this.AppForm.value.fromDate.toISOString(),
+        booked_to: this.AppForm.value.toDate.toISOString()
+      }
+      this.appointmentService.createAppointment(appointment).subscribe({
+        next: data &#x3D;&gt; {
+          this.successMsg &#x3D; &quot;Appointment Created Successful&quot;
+        },
+        error: error &#x3D;&gt; {
+          if(error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Bad Request&quot;) {
+            this.successMsg &#x3D; &quot;Appointment Already Exist&quot;
+          } else {
+            this.successMsg &#x3D; &quot;Appointment Not Created&quot;
+          }
+        }
+      })
+    } else if(!this.isInput(this.AppForm.value.title) &amp;&amp; !this.isInput(this.AppForm.value.description) &amp;&amp; !this.isUrl(this.AppForm.value.link)) {
+      this.successMsg &#x3D; &quot;Title or Description or Link Is Empty&quot;
+    } else if(!this.isInput(this.AppForm.value.title)) {
+      this.successMsg &#x3D; &quot;Title is Not Valid&quot;
+    } else if(!this.isInput(this.AppForm.value.description)) {
+      this.successMsg &#x3D; &quot;Description is Not Valid&quot;
+    } else if(!this.isUrl(this.AppForm.value.link)) {
+      this.successMsg &#x3D; &quot;Link is Not Valid&quot;
+    } else if(this.AppForm.value.title &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Title is Required&quot;
+    } else if(this.AppForm.value.description &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Description is Required&quot;
+    } else if(this.AppForm.value.link &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Link is Required&quot;
+    } else {
+      this.successMsg &#x3D; &quot;Form is Not Valid&quot;
+    }
+  }
+
+  //Create News
+  createNews(): void {
+    if(this.isInput(this.NewsForm.value.title) &amp;&amp; this.isInput(this.NewsForm.value.description) &amp;&amp; this.isUrl(this.NewsForm.value.link) &amp;&amp; this.NewsForm.valid) {
+      var news: CreateNews &#x3D; {
+        title: this.NewsForm.value.title,
+        description: this.NewsForm.value.description,
+        link: this.NewsForm.value.link
+      }
+      this.newsService.createNews(news).subscribe({
+        next: data &#x3D;&gt; {
+          this.successMsg &#x3D; &quot;News Created Successful&quot;
+          this.openSnackBar(this.successMsg)
+          this.NewsForm.reset()
+        },
+        error: error &#x3D;&gt; {
+          if(error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Bad Request&quot;) {
+            this.successMsg &#x3D; &quot;News Already Exist&quot;
+          } else {
+            this.successMsg &#x3D; &quot;News Not Created&quot;
+          }
+        }
+      })
+    } else if(!this.isInput(this.NewsForm.value.title) &amp;&amp; !this.isInput(this.NewsForm.value.description) &amp;&amp; !this.isUrl(this.NewsForm.value.link)) {
+      this.successMsg &#x3D; &quot;Title or Description or Link Is Empty&quot;
+    } else if(!this.isInput(this.NewsForm.value.title)) {
+      this.successMsg &#x3D; &quot;Title is Not Valid&quot;
+    } else if(!this.isInput(this.NewsForm.value.description)) {
+      this.successMsg &#x3D; &quot;Description is Not Valid&quot;
+    } else if(!this.isUrl(this.NewsForm.value.link)) {
+      this.successMsg &#x3D; &quot;Link is Not Valid&quot;
+    } else if(this.NewsForm.value.title &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Title is Required&quot;
+    } else if(this.NewsForm.value.description &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Description is Required&quot;
+    } else if(this.NewsForm.value.link &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Link is Required&quot;
+    } else {
+      this.successMsg &#x3D; &quot;Form is Not Valid&quot;
+    }
+  }
+
+  //Create Room
+  createRoom(): void {
+    if(this.isNumber(this.RoomForm.value.roomId) &amp;&amp; this.isInput(this.RoomForm.value.name) &amp;&amp; this.isInput(this.RoomForm.value.description) &amp;&amp; this.RoomForm.valid) {
+      var room: CreateRoom &#x3D; {
+        booked_from: null,
+        booked_to: null,
+        roomId: this.RoomForm.value.roomId,
+        name: this.RoomForm.value.name,
+        description: this.RoomForm.value.description,
+        isBooked: false
+      }
+      this.roomsService.createRoom(room).subscribe({
+        next: data &#x3D;&gt; {
+          this.successMsg &#x3D; &quot;Room Created Successful&quot;
+        },
+        error: error &#x3D;&gt; {
+          if(error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Bad Request&quot;) {
+            this.successMsg &#x3D; &quot;Room-Id Already Exist&quot;
+          } else {
+            this.successMsg &#x3D; &quot;Room Not Created&quot;
+          }
+        }
+      })
+    } else if(!this.isNumber(this.RoomForm.value.roomId) &amp;&amp; !this.isInput(this.RoomForm.value.name) &amp;&amp; !this.isInput(this.RoomForm.value.description)) {
+      this.successMsg &#x3D; &quot;Room-Id or Name or Description Is Empty&quot;
+    } else if(!this.isNumber(this.RoomForm.value.roomId)) {
+      this.successMsg &#x3D; &quot;Room-Id is Not Valid&quot;
+    } else if(!this.isInput(this.RoomForm.value.name)) {
+      this.successMsg &#x3D; &quot;Name is Not Valid&quot;
+    } else if(!this.isInput(this.RoomForm.value.description)) {
+      this.successMsg &#x3D; &quot;Description is Not Valid&quot;
+    } else if(this.RoomForm.value.roomId &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Room-Id is Required&quot;
+    } else if(this.RoomForm.value.name &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Name is Required&quot;
+    } else if(this.RoomForm.value.description &#x3D;&#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Description is Required&quot;
+    } else {
+      this.successMsg &#x3D; &quot;Form is Not Valid&quot;
+    }
+  }
+
+  //Create User
+  createUser(): void {
+    if(this.isInput(this.UserForm.value.name) &amp;&amp; this.isEmail(this.UserForm.value.email) &amp;&amp; this.isPassword(this.UserForm.value.password, this.UserForm.value.password2) &amp;&amp; this.UserForm.valid) {
+      var user: CreateUser &#x3D; {
+        name: this.UserForm.value.name,
+        email: this.UserForm.value.email,
+        password: this.UserForm.value.password
+      }
+      this.userService.registerUser(user).subscribe({
+        next: data &#x3D;&gt; {
+          this.successMsg &#x3D; &quot;Registration Successful&quot;
+        },
+        error: error &#x3D;&gt; {
+          if(error[&#x27;statusText&#x27;] &#x3D;&#x3D; &quot;Bad Request&quot;) {
+            this.successMsg &#x3D; &quot;Email Already Exist&quot;
+          } else {
+            this.successMsg &#x3D; &quot;User Not Created&quot;
+          }
+        }
+      });
+    } else if(!this.isEmail(this.UserForm.value.email) &amp;&amp; this.UserForm.value.password &#x3D;&#x3D; &quot;&quot; &amp;&amp; this.UserForm.value.password2 &#x3D;&#x3D; &quot;&quot;) {
+      this.successMsg &#x3D; &quot;Email or Password Is Empty&quot;
+    } else if(!this.isEmail(this.UserForm.value.email)) {
+      this.successMsg &#x3D; &quot;Email Is Not Valid&quot;
+    } else if(!this.isPassword(this.UserForm.value.password, this.UserForm.value.password2)) {
+      this.successMsg &#x3D; &quot;Password Does Not Match or Password must be at least 6 Characters Long&quot;
+    } else if(this.UserForm.value.email &#x3D;&#x3D; &quot;&quot; || this.UserForm.value.email &#x3D;&#x3D; null || this.UserForm.value.email &#x3D;&#x3D; undefined) {
+      this.successMsg &#x3D; &quot;Email Is Required&quot;
+    } else if(this.UserForm.value.password &#x3D;&#x3D; &quot;&quot; || this.UserForm.value.password &#x3D;&#x3D; null || this.UserForm.value.password &#x3D;&#x3D; undefined) {
+      this.successMsg &#x3D; &quot;Password Is Required&quot;
+    } else if(this.UserForm.value.password.length &lt; 6) {
+      this.successMsg &#x3D; &quot;Password must be at least 6 Characters Long&quot;
+    } else if(this.UserForm.value.password2 &#x3D;&#x3D; &quot;&quot; || this.UserForm.value.password2 &#x3D;&#x3D; null || this.UserForm.value.password2 &#x3D;&#x3D; undefined) {
+      this.successMsg &#x3D; &quot;Confirm Password Is Required&quot;
+    } else if(this.UserForm.value.password2.length &lt; 6) {
+      this.successMsg &#x3D; &quot;Confirm Password must be at least 6 Characters Long&quot;
+    } else if(this.UserForm.value.name &#x3D;&#x3D; &quot;&quot; || this.UserForm.value.name &#x3D;&#x3D; null || this.UserForm.value.name &#x3D;&#x3D; undefined) {
+      this.successMsg &#x3D; &quot;Name Is Required&quot;
+    } else {
+      this.successMsg &#x3D; &quot;Email Is Not Valid&quot;
+    }
+  }
+
+  isInput(name: string): Boolean {
+    return (name !&#x3D; &quot;&quot; &amp;&amp; name !&#x3D; null &amp;&amp; name !&#x3D; undefined) ? true : false
+  }
+
+  isEmail(email: string): Boolean {
+    var regexp &#x3D; new RegExp(/^(([^&lt;&gt;()\[\]\\.,;:\s@&quot;]+(\.[^&lt;&gt;()\[\]\\.,;:\s@&quot;]+)*)|(&quot;.+&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    return regexp.test(email)
+  }
+
+  isPassword(pass1: string, pass2: string): Boolean {
+    return pass1 &#x3D;&#x3D;&#x3D; pass2 &amp;&amp; pass1.length &gt;&#x3D; 6 &amp;&amp; pass2.length &gt;&#x3D; 6
+  }
+
+  isUrl(url: string): Boolean {
+    var regexp &#x3D; new RegExp(/^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:[/?#]\S*)?$/);
+    return regexp.test(url)
+  }
+
+  isNumber(number: Number): Boolean {
+    return (number &gt; 0) ? true : false
+  }
+
+
+  logout() {
+    this.jwtService.logout();
+    this.router.navigateByUrl(&#x27;/login&#x27;);
+  }
+
+  openSnackBar(message: string) {
+    this.snackbar.open(message);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;tabs&quot;&gt;
+&lt;mat-tab-group  mat-align-tabs&#x3D;&quot;center&quot; dynamicHeight&gt;
+
+    &lt;!-- Create News  --&gt;
+    &lt;mat-tab label&#x3D;&quot;News&quot;&gt;
+        &lt;!-- &lt;ng-template matTabContent&gt; --&gt;
+            &lt;mat-label&gt;Create News&lt;/mat-label&gt;
+
+                &lt;form [formGroup]&#x3D;&quot;NewsForm&quot; (ngSubmit)&#x3D;&quot;createNews()&quot;&gt;
+                    &lt;div&gt;
+                      &lt;mat-label&gt;Title&lt;/mat-label&gt;&lt;br&gt;
+                      &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;title&quot; name&#x3D;&quot;title&quot; placeholder&#x3D;&quot;Title&quot; required formControlName&#x3D;&quot;title&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls1.title.errors }&quot; /&gt;
+                      &lt;div *ngIf&#x3D;&quot;formControls1.title.errors&quot;&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;formControls1.title.errors?.required&quot;&gt;Title is required&lt;/mat-error&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;formControls1.title.errors?.title&quot;&gt;Title must be valid&lt;/mat-error&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div&gt;
+                      &lt;mat-label&gt;Description&lt;/mat-label&gt;&lt;br&gt;
+                      &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;description&quot; name&#x3D;&quot;description&quot; placeholder&#x3D;&quot;Description&quot; required formControlName&#x3D;&quot;description&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls1.description.errors }&quot; /&gt;
+                      &lt;div *ngIf&#x3D;&quot;formControls1.description.errors&quot;&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;formControls1.description.errors?.required&quot;&gt;Description is required&lt;/mat-error&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;formControls1.description.errors?.description&quot;&gt;Description must be valid&lt;/mat-error&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;div&gt;
+                        &lt;mat-label&gt;Link&lt;/mat-label&gt;&lt;br&gt;
+                        &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;link&quot; name&#x3D;&quot;link&quot; placeholder&#x3D;&quot;Link&quot; required formControlName&#x3D;&quot;link&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls1.title.errors }&quot; /&gt;
+                        &lt;div *ngIf&#x3D;&quot;formControls1.link.errors&quot;&gt;
+                          &lt;mat-error *ngIf&#x3D;&quot;formControls1.link.errors?.required&quot;&gt;Link is required&lt;/mat-error&gt;
+                          &lt;mat-error *ngIf&#x3D;&quot;formControls1.link.errors?.link&quot;&gt;Link must be valid&lt;/mat-error&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;mat-action-row&gt;
+                        &lt;button mat-raised-button class&#x3D;&quot;button&quot;&gt;&lt;b&gt;Create&lt;/b&gt;&lt;/button&gt;
+                    &lt;/mat-action-row&gt;
+        
+                  &lt;/form&gt;
+        &lt;!-- &lt;/ng-template&gt;  --&gt;
+        &lt;/mat-tab&gt;
+
+        &lt;!-- Create Event  --&gt;
+    &lt;mat-tab label&#x3D;&quot;Events&quot;&gt;
+        &lt;!-- &lt;ng-template matTabContent&gt; --&gt;
+        &lt;form [formGroup]&#x3D;&quot;EventForm&quot; (ngSubmit)&#x3D;&quot;createEvent()&quot;&gt;
+            &lt;div&gt;
+              &lt;mat-label&gt;Title&lt;/mat-label&gt;&lt;br&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;title&quot; name&#x3D;&quot;title&quot; placeholder&#x3D;&quot;Title&quot; required formControlName&#x3D;&quot;title&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls2.title.errors }&quot; /&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls2.title.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.title.errors?.required&quot;&gt;Title is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.title.errors?.title&quot;&gt;Title must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div&gt;
+              &lt;mat-label&gt;Description&lt;/mat-label&gt;&lt;br&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;description&quot; name&#x3D;&quot;description&quot; placeholder&#x3D;&quot;Description&quot; required formControlName&#x3D;&quot;description&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls2.description.errors }&quot; /&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls2.description.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.description.errors?.required&quot;&gt;Description is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.description.errors?.description&quot;&gt;Description must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div&gt;
+              &lt;mat-label&gt;Organiser&lt;/mat-label&gt;&lt;br&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;organiser&quot; name&#x3D;&quot;organiser&quot; placeholder&#x3D;&quot;Organiser&quot; required formControlName&#x3D;&quot;organiser&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls2.organiser.errors }&quot;&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls2.organiser.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.organiser.errors?.required&quot;&gt;Organiser is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.organiser.errors?.organiser&quot;&gt;Organiser must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div&gt;
+              &lt;mat-label&gt;Participants&lt;/mat-label&gt;&lt;br&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;participants&quot; name&#x3D;&quot;participants&quot; placeholder&#x3D;&quot;Participants&quot; required formControlName&#x3D;&quot;participants&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls2.participants.errors }&quot;&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls2.participants.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.participants.errors?.required&quot;&gt;Participants is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.participants.errors?.participants&quot;&gt;Participants must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div&gt;
+              &lt;div&gt;
+                &lt;mat-label&gt;Room&lt;/mat-label&gt;
+                &lt;mat-select formControlName&#x3D;&quot;room&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls2.room.errors }&quot;&gt;
+                  &lt;mat-option *ngFor&#x3D;&quot;let eventRoom of rooms&quot; [value]&#x3D;&quot;eventRoom._id&quot;&gt;
+                    {{eventRoom.name}}&amp;#8212;{{eventRoom.roomId}}
+                  &lt;/mat-option&gt;
+                &lt;/mat-select&gt;
+                &lt;div *ngIf&#x3D;&quot;formControls2.room.errors&quot;&gt;
+                  &lt;mat-error *ngIf&#x3D;&quot;formControls2.room.errors?.required&quot;&gt;Room is required&lt;/mat-error&gt;
+                  &lt;mat-error *ngIf&#x3D;&quot;formControls2.room.errors?.room&quot;&gt;Room must be valid&lt;/mat-error&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div&gt;
+              &lt;mat-label&gt;Date&lt;/mat-label&gt;&lt;br&gt;
+              &lt;mat-date-range-input [rangePicker]&#x3D;&quot;picker&quot;&gt;
+                &lt;input matStartDate placeholder&#x3D;&quot;Start date&quot; required formControlName&#x3D;&quot;fromDate&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls2.fromDate.errors }&quot;&gt;
+                &lt;input matEndDate placeholder&#x3D;&quot;End date&quot; required formControlName&#x3D;&quot;toDate&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls2.toDate.errors }&quot;&gt;
+              &lt;/mat-date-range-input&gt;
+              &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+              &lt;mat-date-range-picker #picker&gt;&lt;/mat-date-range-picker&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls2.fromDate.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.fromDate.errors?.required&quot;&gt;Start Date is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.fromDate.hasError(&#x27;matStartDateInvalid&#x27;)&quot;&gt;Start Date must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls2.toDate.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.toDate.errors?.required&quot;&gt;End Date is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls2.toDate.hasError(&#x27;matEndDateInvalid&#x27;)&quot;&gt;End Date must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;mat-action-row&gt;
+                &lt;button mat-raised-button class&#x3D;&quot;button&quot;&gt;&lt;b&gt;Create&lt;/b&gt;&lt;/button&gt;
+            &lt;/mat-action-row&gt;
+
+          &lt;/form&gt; 
+        &lt;!-- &lt;/ng-template&gt; --&gt;
+        &lt;/mat-tab&gt;
+
+        &lt;!-- Create Room  --&gt;
+    &lt;mat-tab label&#x3D;&quot;Roooms&quot;&gt;
+        &lt;!-- &lt;ng-template matTabContent&gt; --&gt;
+        &lt;form [formGroup]&#x3D;&quot;RoomForm&quot; (ngSubmit)&#x3D;&quot;createRoom()&quot;&gt;
+            &lt;div&gt;
+              &lt;mat-label&gt;Room Id&lt;/mat-label&gt;&lt;br&gt;
+              &lt;input type&#x3D;&quot;number&quot; id&#x3D;&quot;roomId&quot; name&#x3D;&quot;roomId&quot; placeholder&#x3D;&quot;Room Id&quot; min&#x3D;&quot;0&quot; required formControlName&#x3D;&quot;roomId&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls3.roomId.errors }&quot; /&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls3.roomId.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls3.roomId.errors?.required&quot;&gt;Room Id is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls3.roomId.errors?.title&quot;&gt;Room Id must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div&gt;
+              &lt;mat-label&gt;Name&lt;/mat-label&gt;&lt;br&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot; placeholder&#x3D;&quot;Name&quot; required formControlName&#x3D;&quot;name&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls3.name.errors }&quot; /&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls3.name.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls3.name.errors?.required&quot;&gt;Name is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls3.name.errors?.name&quot;&gt;Name must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div&gt;
+              &lt;mat-label&gt;Description&lt;/mat-label&gt;&lt;br&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;description&quot; name&#x3D;&quot;description&quot; placeholder&#x3D;&quot;Description&quot; required formControlName&#x3D;&quot;description&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls3.description.errors }&quot; /&gt;
+              &lt;div *ngIf&#x3D;&quot;formControls3.description.errors&quot;&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls3.description.errors?.required&quot;&gt;Description is required&lt;/mat-error&gt;
+                &lt;mat-error *ngIf&#x3D;&quot;formControls3.description.errors?.description&quot;&gt;Description must be valid&lt;/mat-error&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;p&gt;&lt;button mat-button class&#x3D;&quot;button&quot;&gt;Create&lt;/button&gt;&lt;/p&gt;
+          &lt;/form&gt; 
+        &lt;!-- &lt;/ng-template&gt; --&gt;
+        &lt;/mat-tab&gt;
+
+        &lt;!-- Create Appointments --&gt;
+    &lt;mat-tab label&#x3D;&quot;Appointments&quot;&gt;
+        &lt;!-- &lt;ng-template matTabContent&gt; --&gt;
+            &lt;form [formGroup]&#x3D;&quot;AppForm&quot; (ngSubmit)&#x3D;&quot;createAppointment()&quot;&gt;
+                &lt;div&gt;
+                  &lt;mat-label&gt;Name&lt;/mat-label&gt;&lt;br&gt;
+                  &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot; placeholder&#x3D;&quot;Name&quot; required formControlName&#x3D;&quot;name&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls4.name.errors }&quot; /&gt;
+                  &lt;div *ngIf&#x3D;&quot;formControls4.name.errors&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls4.name.errors?.required&quot;&gt;Name is required&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls4.name.errors?.name&quot;&gt;Name must be valid&lt;/mat-error&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+                &lt;div&gt;
+                  &lt;mat-label&gt;Email&lt;/mat-label&gt;&lt;br&gt;
+                  &lt;input type&#x3D;&quot;email&quot; id&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Email&quot; required formControlName&#x3D;&quot;email&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls4.email.errors }&quot; /&gt;
+                  &lt;div *ngIf&#x3D;&quot;formControls4.email.errors&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls4.email.errors?.required&quot;&gt;Email is required&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls4.email.errors?.email&quot;&gt;Email must be valid&lt;/mat-error&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+                &lt;div&gt;
+                    &lt;mat-label&gt;Description&lt;/mat-label&gt;&lt;br&gt;
+                    &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;description&quot; name&#x3D;&quot;description&quot; placeholder&#x3D;&quot;Description&quot; required formControlName&#x3D;&quot;description&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls4.description.errors }&quot; /&gt;
+                    &lt;div *ngIf&#x3D;&quot;formControls4.description.errors&quot;&gt;
+                      &lt;mat-error *ngIf&#x3D;&quot;formControls4.description.errors?.required&quot;&gt;Description is required&lt;/mat-error&gt;
+                      &lt;mat-error *ngIf&#x3D;&quot;formControls4.description.errors?.description&quot;&gt;Description must be valid&lt;/mat-error&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;br&gt;
+                &lt;div&gt;
+                    &lt;mat-label&gt;Date&lt;/mat-label&gt;&lt;br&gt;
+                    &lt;mat-date-range-input [rangePicker]&#x3D;&quot;picker&quot;&gt;
+                      &lt;input matStartDate placeholder&#x3D;&quot;Start date&quot; required formControlName&#x3D;&quot;fromDate&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls4.fromDate.errors }&quot;&gt;
+                      &lt;input matEndDate placeholder&#x3D;&quot;End date&quot; required formControlName&#x3D;&quot;toDate&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls4.toDate.errors }&quot;&gt;
+                    &lt;/mat-date-range-input&gt;
+                    &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                    &lt;mat-date-range-picker #picker&gt;&lt;/mat-date-range-picker&gt;
+                    &lt;div *ngIf&#x3D;&quot;formControls4.fromDate.errors&quot;&gt;
+                      &lt;mat-error *ngIf&#x3D;&quot;formControls4.fromDate.errors?.required&quot;&gt;Start Date is required&lt;/mat-error&gt;
+                      &lt;mat-error *ngIf&#x3D;&quot;formControls4.fromDate.hasError(&#x27;matStartDateInvalid&#x27;)&quot;&gt;Start Date must be valid&lt;/mat-error&gt;
+                    &lt;/div&gt;
+                    &lt;div *ngIf&#x3D;&quot;formControls4.toDate.errors&quot;&gt;
+                      &lt;mat-error *ngIf&#x3D;&quot;formControls4.toDate.errors?.required&quot;&gt;End Date is required&lt;/mat-error&gt;
+                      &lt;mat-error *ngIf&#x3D;&quot;formControls4.toDate.hasError(&#x27;matEndDateInvalid&#x27;)&quot;&gt;End Date must be valid&lt;/mat-error&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;br&gt;
+                &lt;p&gt;&lt;button mat-button class&#x3D;&quot;button&quot;&gt;Create&lt;/button&gt;&lt;/p&gt;
+              &lt;/form&gt; 
+        &lt;!-- &lt;/ng-template&gt; --&gt;
+        &lt;/mat-tab&gt;
+
+        &lt;!-- Create User --&gt;
+    &lt;mat-tab label&#x3D;&quot;User&quot;&gt;
+        &lt;!-- &lt;ng-template matTabContent&gt; --&gt;
+            &lt;mat-label&gt;Create User&lt;/mat-label&gt;
+
+            &lt;form [formGroup]&#x3D;&quot;UserForm&quot; (ngSubmit)&#x3D;&quot;createUser()&quot;&gt;
+                &lt;div&gt;
+                  &lt;mat-label&gt;Name&lt;/mat-label&gt;&lt;br&gt;
+                  &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot; placeholder&#x3D;&quot;Name&quot; required formControlName&#x3D;&quot;name&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls5.name.errors }&quot; /&gt;
+                  &lt;div *ngIf&#x3D;&quot;formControls5.name.errors&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls5.name.errors?.required&quot;&gt;Name is required&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls5.name.errors?.name&quot;&gt;Name must be valid&lt;/mat-error&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+                &lt;div&gt;
+                  &lt;mat-label&gt;Email&lt;/mat-label&gt;&lt;br&gt;
+                  &lt;input type&#x3D;&quot;email&quot; id&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Email&quot; required formControlName&#x3D;&quot;email&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls5.email.errors }&quot; /&gt;
+                  &lt;div *ngIf&#x3D;&quot;formControls5.email.errors&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls5.email.errors?.required&quot;&gt;Email is required&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls5.email.errors?.email&quot;&gt;Email must be valid&lt;/mat-error&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+                &lt;div&gt;
+                  &lt;mat-label&gt;Password&lt;/mat-label&gt;&lt;br&gt;
+                  &lt;input type&#x3D;&quot;password&quot; id&#x3D;&quot;password&quot; name&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Password&quot; required formControlName&#x3D;&quot;password&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls5.password.errors }&quot;&gt;
+                  &lt;div *ngIf&#x3D;&quot;formControls5.password.errors&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls5.password.errors?.required&quot;&gt;Password is required&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls5.password.errors?.password&quot;&gt;Password must be valid&lt;/mat-error&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+                &lt;div&gt;
+                  &lt;mat-label&gt;Confirm Password&lt;/mat-label&gt;&lt;br&gt;
+                  &lt;input type&#x3D;&quot;password&quot; id&#x3D;&quot;password2&quot; name&#x3D;&quot;password2&quot; placeholder&#x3D;&quot;Confirm Password&quot; required formControlName&#x3D;&quot;password2&quot; [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: formControls5.password2.errors }&quot;&gt;
+                  &lt;div *ngIf&#x3D;&quot;formControls5.password2.errors&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls5.password2.errors?.required&quot;&gt;Confirm Password is required&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;formControls5.password2.errors?.password2&quot;&gt;Confirm Password must be valid&lt;/mat-error&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+                &lt;p&gt;&lt;button mat-raised-button class&#x3D;&quot;button&quot;&gt;&lt;b&gt;Create&lt;/b&gt;&lt;/button&gt;&lt;/p&gt;
+              &lt;/form&gt;
+        &lt;!-- &lt;/ng-template&gt; --&gt;
+         &lt;/mat-tab&gt;
+
+  &lt;/mat-tab-group&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./admin.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.button {
+    margin: 2%;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="tabs"><mat-tab-group  mat-align-tabs="center" dynamicHeight>    <!-- Create News  -->    <mat-tab label="News">        <!-- <ng-template matTabContent> -->            <mat-label>Create News</mat-label>                <form [formGroup]="NewsForm" (ngSubmit)="createNews()">                    <div>                      <mat-label>Title</mat-label><br>                      <input type="text" id="title" name="title" placeholder="Title" required formControlName="title" [ngClass]="{ \'has-error\': formControls1.title.errors }" />                      <div *ngIf="formControls1.title.errors">                        <mat-error *ngIf="formControls1.title.errors?.required">Title is required</mat-error>                        <mat-error *ngIf="formControls1.title.errors?.title">Title must be valid</mat-error>                      </div>                    </div>                    <br>                    <div>                      <mat-label>Description</mat-label><br>                      <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ \'has-error\': formControls1.description.errors }" />                      <div *ngIf="formControls1.description.errors">                        <mat-error *ngIf="formControls1.description.errors?.required">Description is required</mat-error>                        <mat-error *ngIf="formControls1.description.errors?.description">Description must be valid</mat-error>                      </div>                    </div>                    <br>                    <div>                        <mat-label>Link</mat-label><br>                        <input type="text" id="link" name="link" placeholder="Link" required formControlName="link" [ngClass]="{ \'has-error\': formControls1.title.errors }" />                        <div *ngIf="formControls1.link.errors">                          <mat-error *ngIf="formControls1.link.errors?.required">Link is required</mat-error>                          <mat-error *ngIf="formControls1.link.errors?.link">Link must be valid</mat-error>                        </div>                      </div>                      <mat-action-row>                        <button mat-raised-button class="button"><b>Create</b></button>                    </mat-action-row>                          </form>        <!-- </ng-template>  -->        </mat-tab>        <!-- Create Event  -->    <mat-tab label="Events">        <!-- <ng-template matTabContent> -->        <form [formGroup]="EventForm" (ngSubmit)="createEvent()">            <div>              <mat-label>Title</mat-label><br>              <input type="text" id="title" name="title" placeholder="Title" required formControlName="title" [ngClass]="{ \'has-error\': formControls2.title.errors }" />              <div *ngIf="formControls2.title.errors">                <mat-error *ngIf="formControls2.title.errors?.required">Title is required</mat-error>                <mat-error *ngIf="formControls2.title.errors?.title">Title must be valid</mat-error>              </div>            </div>            <br>            <div>              <mat-label>Description</mat-label><br>              <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ \'has-error\': formControls2.description.errors }" />              <div *ngIf="formControls2.description.errors">                <mat-error *ngIf="formControls2.description.errors?.required">Description is required</mat-error>                <mat-error *ngIf="formControls2.description.errors?.description">Description must be valid</mat-error>              </div>            </div>            <br>            <div>              <mat-label>Organiser</mat-label><br>              <input type="text" id="organiser" name="organiser" placeholder="Organiser" required formControlName="organiser" [ngClass]="{ \'has-error\': formControls2.organiser.errors }">              <div *ngIf="formControls2.organiser.errors">                <mat-error *ngIf="formControls2.organiser.errors?.required">Organiser is required</mat-error>                <mat-error *ngIf="formControls2.organiser.errors?.organiser">Organiser must be valid</mat-error>              </div>            </div>            <br>            <div>              <mat-label>Participants</mat-label><br>              <input type="text" id="participants" name="participants" placeholder="Participants" required formControlName="participants" [ngClass]="{ \'has-error\': formControls2.participants.errors }">              <div *ngIf="formControls2.participants.errors">                <mat-error *ngIf="formControls2.participants.errors?.required">Participants is required</mat-error>                <mat-error *ngIf="formControls2.participants.errors?.participants">Participants must be valid</mat-error>              </div>            </div>            <br>            <div>              <div>                <mat-label>Room</mat-label>                <mat-select formControlName="room" [ngClass]="{ \'has-error\': formControls2.room.errors }">                  <mat-option *ngFor="let eventRoom of rooms" [value]="eventRoom._id">                    {{eventRoom.name}}&#8212;{{eventRoom.roomId}}                  </mat-option>                </mat-select>                <div *ngIf="formControls2.room.errors">                  <mat-error *ngIf="formControls2.room.errors?.required">Room is required</mat-error>                  <mat-error *ngIf="formControls2.room.errors?.room">Room must be valid</mat-error>                </div>              </div>            </div>            <br>            <div>              <mat-label>Date</mat-label><br>              <mat-date-range-input [rangePicker]="picker">                <input matStartDate placeholder="Start date" required formControlName="fromDate" [ngClass]="{ \'has-error\': formControls2.fromDate.errors }">                <input matEndDate placeholder="End date" required formControlName="toDate" [ngClass]="{ \'has-error\': formControls2.toDate.errors }">              </mat-date-range-input>              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>              <mat-date-range-picker #picker></mat-date-range-picker>              <div *ngIf="formControls2.fromDate.errors">                <mat-error *ngIf="formControls2.fromDate.errors?.required">Start Date is required</mat-error>                <mat-error *ngIf="formControls2.fromDate.hasError(\'matStartDateInvalid\')">Start Date must be valid</mat-error>              </div>              <div *ngIf="formControls2.toDate.errors">                <mat-error *ngIf="formControls2.toDate.errors?.required">End Date is required</mat-error>                <mat-error *ngIf="formControls2.toDate.hasError(\'matEndDateInvalid\')">End Date must be valid</mat-error>              </div>            </div>            <mat-action-row>                <button mat-raised-button class="button"><b>Create</b></button>            </mat-action-row>          </form>         <!-- </ng-template> -->        </mat-tab>        <!-- Create Room  -->    <mat-tab label="Roooms">        <!-- <ng-template matTabContent> -->        <form [formGroup]="RoomForm" (ngSubmit)="createRoom()">            <div>              <mat-label>Room Id</mat-label><br>              <input type="number" id="roomId" name="roomId" placeholder="Room Id" min="0" required formControlName="roomId" [ngClass]="{ \'has-error\': formControls3.roomId.errors }" />              <div *ngIf="formControls3.roomId.errors">                <mat-error *ngIf="formControls3.roomId.errors?.required">Room Id is required</mat-error>                <mat-error *ngIf="formControls3.roomId.errors?.title">Room Id must be valid</mat-error>              </div>            </div>            <br>            <div>              <mat-label>Name</mat-label><br>              <input type="text" id="name" name="name" placeholder="Name" required formControlName="name" [ngClass]="{ \'has-error\': formControls3.name.errors }" />              <div *ngIf="formControls3.name.errors">                <mat-error *ngIf="formControls3.name.errors?.required">Name is required</mat-error>                <mat-error *ngIf="formControls3.name.errors?.name">Name must be valid</mat-error>              </div>            </div>            <br>            <div>              <mat-label>Description</mat-label><br>              <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ \'has-error\': formControls3.description.errors }" />              <div *ngIf="formControls3.description.errors">                <mat-error *ngIf="formControls3.description.errors?.required">Description is required</mat-error>                <mat-error *ngIf="formControls3.description.errors?.description">Description must be valid</mat-error>              </div>            </div>            <br>            <p><button mat-button class="button">Create</button></p>          </form>         <!-- </ng-template> -->        </mat-tab>        <!-- Create Appointments -->    <mat-tab label="Appointments">        <!-- <ng-template matTabContent> -->            <form [formGroup]="AppForm" (ngSubmit)="createAppointment()">                <div>                  <mat-label>Name</mat-label><br>                  <input type="text" id="name" name="name" placeholder="Name" required formControlName="name" [ngClass]="{ \'has-error\': formControls4.name.errors }" />                  <div *ngIf="formControls4.name.errors">                    <mat-error *ngIf="formControls4.name.errors?.required">Name is required</mat-error>                    <mat-error *ngIf="formControls4.name.errors?.name">Name must be valid</mat-error>                  </div>                </div>                <br>                <div>                  <mat-label>Email</mat-label><br>                  <input type="email" id="email" name="email" placeholder="Email" required formControlName="email" [ngClass]="{ \'has-error\': formControls4.email.errors }" />                  <div *ngIf="formControls4.email.errors">                    <mat-error *ngIf="formControls4.email.errors?.required">Email is required</mat-error>                    <mat-error *ngIf="formControls4.email.errors?.email">Email must be valid</mat-error>                  </div>                </div>                <br>                <div>                    <mat-label>Description</mat-label><br>                    <input type="text" id="description" name="description" placeholder="Description" required formControlName="description" [ngClass]="{ \'has-error\': formControls4.description.errors }" />                    <div *ngIf="formControls4.description.errors">                      <mat-error *ngIf="formControls4.description.errors?.required">Description is required</mat-error>                      <mat-error *ngIf="formControls4.description.errors?.description">Description must be valid</mat-error>                    </div>                  </div>                <br>                <div>                    <mat-label>Date</mat-label><br>                    <mat-date-range-input [rangePicker]="picker">                      <input matStartDate placeholder="Start date" required formControlName="fromDate" [ngClass]="{ \'has-error\': formControls4.fromDate.errors }">                      <input matEndDate placeholder="End date" required formControlName="toDate" [ngClass]="{ \'has-error\': formControls4.toDate.errors }">                    </mat-date-range-input>                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>                    <mat-date-range-picker #picker></mat-date-range-picker>                    <div *ngIf="formControls4.fromDate.errors">                      <mat-error *ngIf="formControls4.fromDate.errors?.required">Start Date is required</mat-error>                      <mat-error *ngIf="formControls4.fromDate.hasError(\'matStartDateInvalid\')">Start Date must be valid</mat-error>                    </div>                    <div *ngIf="formControls4.toDate.errors">                      <mat-error *ngIf="formControls4.toDate.errors?.required">End Date is required</mat-error>                      <mat-error *ngIf="formControls4.toDate.hasError(\'matEndDateInvalid\')">End Date must be valid</mat-error>                    </div>                  </div>                <br>                <p><button mat-button class="button">Create</button></p>              </form>         <!-- </ng-template> -->        </mat-tab>        <!-- Create User -->    <mat-tab label="User">        <!-- <ng-template matTabContent> -->            <mat-label>Create User</mat-label>            <form [formGroup]="UserForm" (ngSubmit)="createUser()">                <div>                  <mat-label>Name</mat-label><br>                  <input type="text" id="name" name="name" placeholder="Name" required formControlName="name" [ngClass]="{ \'has-error\': formControls5.name.errors }" />                  <div *ngIf="formControls5.name.errors">                    <mat-error *ngIf="formControls5.name.errors?.required">Name is required</mat-error>                    <mat-error *ngIf="formControls5.name.errors?.name">Name must be valid</mat-error>                  </div>                </div>                <br>                <div>                  <mat-label>Email</mat-label><br>                  <input type="email" id="email" name="email" placeholder="Email" required formControlName="email" [ngClass]="{ \'has-error\': formControls5.email.errors }" />                  <div *ngIf="formControls5.email.errors">                    <mat-error *ngIf="formControls5.email.errors?.required">Email is required</mat-error>                    <mat-error *ngIf="formControls5.email.errors?.email">Email must be valid</mat-error>                  </div>                </div>                <br>                <div>                  <mat-label>Password</mat-label><br>                  <input type="password" id="password" name="password" placeholder="Password" required formControlName="password" [ngClass]="{ \'has-error\': formControls5.password.errors }">                  <div *ngIf="formControls5.password.errors">                    <mat-error *ngIf="formControls5.password.errors?.required">Password is required</mat-error>                    <mat-error *ngIf="formControls5.password.errors?.password">Password must be valid</mat-error>                  </div>                </div>                <br>                <div>                  <mat-label>Confirm Password</mat-label><br>                  <input type="password" id="password2" name="password2" placeholder="Confirm Password" required formControlName="password2" [ngClass]="{ \'has-error\': formControls5.password2.errors }">                  <div *ngIf="formControls5.password2.errors">                    <mat-error *ngIf="formControls5.password2.errors?.required">Confirm Password is required</mat-error>                    <mat-error *ngIf="formControls5.password2.errors?.password2">Confirm Password must be valid</mat-error>                  </div>                </div>                <br>                <p><button mat-raised-button class="button"><b>Create</b></button></p>              </form>        <!-- </ng-template> -->         </mat-tab>  </mat-tab-group></div></div>'
+    var COMPONENTS = [{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppointmentsComponent', 'selector': 'app-appointments'},{'name': 'EventsComponent', 'selector': 'app-events'},{'name': 'GeocodingComponent', 'selector': 'app-geocoding'},{'name': 'HomepageComponent', 'selector': 'app-homepage'},{'name': 'InternalinfoComponent', 'selector': 'app-internal-info'},{'name': 'InternationalComponent', 'selector': 'app-international'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultsListComponent', 'selector': 'app-results-list'},{'name': 'RoomsComponent', 'selector': 'app-rooms'},{'name': 'UserComponent', 'selector': 'app-user'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AdminComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdminComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

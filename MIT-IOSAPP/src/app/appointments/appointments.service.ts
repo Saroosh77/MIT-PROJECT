@@ -12,4 +12,13 @@ export class AppointmentsService {
   getAppointment(){
     return this.http.get("/api/appointment");
   }
+
+  createAppointment(appointment: Appointment) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+      })
+    }
+    return this.http.post<Appointment>("/api/appointment", appointment, httpOptions)
+  }
 }

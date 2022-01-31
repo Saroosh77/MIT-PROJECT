@@ -23,7 +23,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { I18nModule } from './i18n/i18n.module';
 import { NominatimService } from './nominatim.service';
 // Material Components
-// import { MatTableModule } from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -36,9 +36,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatSelectModule } from '@angular/material/select';
 import  {MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatSnackBar, MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import {LeafletModule} from '@asymmetrik/ngx-leaflet';
 import "leaflet/dist/leaflet.css";
 import { GeocodingComponent } from './navigation/geocoding/geocoding.component';
@@ -76,7 +78,9 @@ import { ResultsListComponent } from './navigation/results-list/results-list.com
     { path: 'internalinfo', component: InternalinfoComponent },
     { path: 'appointments', component: AppointmentsComponent },
     { path: 'register', component: RegisterComponent },
-], { relativeLinkResolution: 'legacy' }),
+], 
+// { relativeLinkResolution: 'legacy' }
+),
     FlexLayoutModule,
     MatButtonModule,
     MatExpansionModule,
@@ -87,14 +91,16 @@ import { ResultsListComponent } from './navigation/results-list/results-list.com
     MatSidenavModule,
     MatDialogModule,
     MatFormFieldModule,
-    // MatTableModule,
+    MatTableModule,
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,
     MatSelectModule,
+    MatTabsModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatGridListModule,
+    MatSnackBarModule,
     LeafletModule,
     BrowserAnimationsModule,
     I18nModule],
@@ -102,7 +108,7 @@ import { ResultsListComponent } from './navigation/results-list/results-list.com
     RouterModule,
   ],
   entryComponents: [LoginComponent],
-  providers: [MatDatepickerModule, MatNativeDateModule, NominatimService ], // SocketioService
+  providers: [MatDatepickerModule, MatNativeDateModule, NominatimService, {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 1000}} ], // SocketioService
   bootstrap: [AppComponent]
 })
 export class AppModule { }
